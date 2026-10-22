@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "date": "2026-10-18",
+  "physical_target": {
+    "board_marking": "ATMEGA328-PU",
+    "expected_signature_from_microchip": "1e9514",
+    "electronic_signature_measured": false
+  },
+  "compiler": {
+    "target": "atmega328",
+    "v0_2_avr_artifact_rebuilt_in_v0_3": false
+  },
+  "simavr": {
+    "v0_2_observed_model_signature": "1e950f",
+    "upstream_source": "https://github.com/buserror/simavr/blob/master/simavr/cores/sim_mega328.c",
+    "source_observation": "SIM_MMCU is atmega328; source includes avr/iom328p.h; names array contains atmega328 and atmega328p",
+    "exact_atmega328_identity_proven": false
+  },
+  "decision": "Keep the signature mismatch visible. Treat current simavr path as useful AVR core/peripheral workload simulation, not exact ATmega328-PU identity qualification."
+}

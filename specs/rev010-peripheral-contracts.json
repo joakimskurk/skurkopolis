@@ -1,0 +1,88 @@
+{
+  "schema": 1,
+  "board": "METROPOLIS Main rev010",
+  "purpose": "Datasheet-level candidate peripheral contracts. These do not assign MCU pins or prove board routing.",
+  "evidence_policy": {
+    "board_observation": "May identify visible package/marking only.",
+    "datasheet_fact": "May describe the identified component family independent of this PCB.",
+    "board_connection": "Must remain unknown until continuity, logic capture, schematic-quality tracing, or equivalent direct evidence exists.",
+    "synthetic_test": "Exercises generic component semantics only and must never be cited as rev010 wiring evidence."
+  },
+  "mcu": {
+    "observed_marking": "ATMEGA328-PU",
+    "package": "28-pin PDIP",
+    "expected_signature_from_microchip": "1e9514",
+    "flash_bytes": 32768,
+    "sram_bytes": 2048,
+    "eeprom_bytes": 1024,
+    "clock_hz": null,
+    "fuses": null,
+    "lock_bits": null,
+    "board_connections_status": "unknown"
+  },
+  "candidates": [
+    {
+      "id": "display_keyscan_candidate",
+      "observed": "STLED316S-family marking visible in supplied photo",
+      "datasheet_contract": {
+        "interface": "3-wire serial CLK/STB/DIN-DOUT plus active-low IRQ",
+        "display": "up to 6 digits / 8 segments plus discrete LED digit",
+        "keyscan": "8 x 2 matrix, two key bytes, SEG1/KS1 at LSB through SEG8/KS8 at MSB",
+        "irq": "asserted low on key-buffer change; cleared after complete key-buffer read"
+      },
+      "board_role_status": "candidate only",
+      "mcu_pins": [],
+      "evidence_needed": [
+        "Trace CLK, STB, DIN/DOUT and IRQ_N nets to ATmega328 pins",
+        "Capture idle/boot traffic from original firmware without driving the bus",
+        "Identify which panel LEDs/digits and switches occupy each STLED memory/key position"
+      ]
+    },
+    {
+      "id": "parallel_input_candidate",
+      "observed": "HC165AG marking visible at IC1 in supplied photo",
+      "datasheet_contract": {
+        "family": "74HC165 parallel-in/serial-out shift register",
+        "parallel_inputs": 8,
+        "parallel_load": "active low asynchronous load",
+        "clock_enable": "high disables CP",
+        "shift_edge": "low-to-high CP while enabled"
+      },
+      "board_role_status": "unknown",
+      "mcu_pins": [],
+      "evidence_needed": [
+        "Trace PL, CP, CE, DS and Q7/Q7-bar nets",
+        "Trace D0-D7 to panel/support signals",
+        "Observe original-firmware load/clock bursts if safely measurable"
+      ]
+    },
+    {
+      "id": "analog_mux_candidate",
+      "observed": "74HC4051D marking visible in supplied photo",
+      "datasheet_contract": {
+        "topology": "8-channel SP8T analog multiplexer/demultiplexer",
+        "select_inputs": ["S0", "S1", "S2"],
+        "enable": "E high disconnects all channels",
+        "analog_nodes": "Y0-Y7 and common Z"
+      },
+      "board_role_status": "unknown",
+      "mcu_pins": [],
+      "evidence_needed": [
+        "Trace S0-S2 and E to MCU or other logic",
+        "Trace Z to an ADC/support node",
+        "Trace Y0-Y7 to sliders/pots/AUX nodes",
+        "Measure settled ADC values and required acquisition delay after channel changes"
+      ]
+    }
+  ],
+  "unmodeled_board_domains": [
+    "external clock input conditioning and edge polarity",
+    "reset input conditioning and priority",
+    "gate output driver and active level",
+    "sync output driver and active level",
+    "pitch CV DAC/PWM/R2R path, reference, scaling and calibration",
+    "slide/glide analog mechanism",
+    "AUX input scaling/protection",
+    "actual oscillator/crystal and fuse-selected clock source"
+  ]
+}

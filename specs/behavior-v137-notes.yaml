@@ -1,0 +1,10 @@
+schema: 1
+firmware: "1.37"
+status: obtained_and_executed_cpu_only_not_board_validated
+image: metropolis_1.37.hex
+revision_family: rev009_or_higher
+source_provenance: artifacts/original-firmware-provenance.json
+cpu_report: artifacts/original-cpu-80000000.json
+board_emulated: false
+differences_from_v130: null
+note: Firmware changelog exists in official updater; no behavior compatibility claims have been validated.

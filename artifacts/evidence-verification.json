@@ -1,0 +1,18 @@
+{
+  "version": "0.4.0",
+  "date": "2026-10-18",
+  "scope": "local evidence intake and digital wiring preflight",
+  "nativeOraclePulses": 72576,
+  "evidenceTestsPassed": 23,
+  "pythonTestsTotal": 33,
+  "pythonTestsPassed": 32,
+  "pythonTestsSkipped": 1,
+  "skipped": "AVR endpoint: no current simulator build",
+  "avrRebuilt": false,
+  "cmakeRerun": false,
+  "dockerRun": false,
+  "browserRun": false,
+  "assignedRealPins": 0,
+  "reviewedRealEvidence": 0,
+  "boardEmulated": false
+}

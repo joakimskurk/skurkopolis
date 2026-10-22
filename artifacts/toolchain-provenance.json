@@ -1,0 +1,32 @@
+[
+  {
+    "url": "https://deb.debian.org/debian/pool/main/g/gcc-avr/gcc-avr_5.4.0+Atmel3.6.2-3_amd64.deb",
+    "file": "gcc-avr_5.4.0+Atmel3.6.2-3_amd64.deb",
+    "sha256": "1d0723749c4cbd55eb2478795a581dd29783150e3340a72c4aa7606d96109fbd"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/b/binutils-avr/binutils-avr_2.26.20160125+Atmel3.6.2-4_amd64.deb",
+    "file": "binutils-avr_2.26.20160125+Atmel3.6.2-4_amd64.deb",
+    "sha256": "cbda4048ad79ddc82239afcbf0ed00f1a961deb2d4523aabc2e7ec00eb8cde83"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/a/avr-libc/avr-libc_2.0.0+Atmel3.6.2-3_all.deb",
+    "file": "avr-libc_2.0.0+Atmel3.6.2-3_all.deb",
+    "sha256": "a7adb563082d291c49fe5f4a483fca18d27f30627c2c8a520c5e23578d0fa5af"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/s/simavr/simavr_1.6+dfsg-3_amd64.deb",
+    "file": "simavr_1.6+dfsg-3_amd64.deb",
+    "sha256": "30b48dfa59476c46a1739c4fb18a41c7f9d391395b4b506b3917e8ebf0b2e9b3"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/s/simavr/libsimavr2_1.6+dfsg-3_amd64.deb",
+    "file": "libsimavr2_1.6+dfsg-3_amd64.deb",
+    "sha256": "583a3a741b499f2c1d1dd5229c471ea1f086774c47bd1f2b67317a30a37a6e82"
+  },
+  {
+    "url": "https://deb.debian.org/debian/pool/main/s/simavr/libsimavr-dev_1.6+dfsg-3_amd64.deb",
+    "file": "libsimavr-dev_1.6+dfsg-3_amd64.deb",
+    "sha256": "e458c46b9d54309424a1ccea1f02369805f5c50d7b38f74606cff8c678127f7b"
+  }
+]

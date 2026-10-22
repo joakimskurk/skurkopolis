@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "profile": "rev010-hypothesis-v1",
+  "keyBytes": [
+    0,
+    0
+  ],
+  "spiWords": {
+    "PC5": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "PC4": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ]
+  },
+  "keyEvents": []
+}

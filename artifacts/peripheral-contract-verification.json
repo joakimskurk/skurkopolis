@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "date": "2026-10-18",
+  "scope": "generic datasheet-level synthetic peripheral models only",
+  "passed": [
+    "74HC4051 channel select and disable semantics",
+    "74HC165 asynchronous parallel load, clock-enable hold and Q7 shift order",
+    "STLED316S two-byte key buffer bit order, IRQ clear-after-complete-read semantics and display memory smoke test",
+    "hardware metadata guard rejects unevidenced rev010 assignments"
+  ],
+  "rev010_wiring_verified": false,
+  "board_emulated": false
+}

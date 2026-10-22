@@ -1,0 +1,31 @@
+schema: 1
+source: https://intellijel.com/downloads/manuals/metropolis_manual_1.30_2020.05.12.pdf
+source_revision: '2020-05-12'
+status: partial_inventory_not_compatibility_certificate
+observations:
+  - id: pulse_count
+    page: 10
+    rule: '1 to 8 clocks per stage'
+    implementation: core_test_seed
+  - id: ratchet
+    page: 10
+    rule: '1 to 4 subdivisions per eligible pulse'
+    implementation: fixed_half_width_audition_only
+  - id: skip
+    page: 10
+    rule: 'Skipped stages consume no clocks'
+    implementation: core_test_seed
+pending:
+  - hold_single_repeat_rest_full_semantics
+  - gate_length_and_step_div
+  - slide_and_rest_pitch
+  - forward_reverse_pingpong_random_brownian
+  - fixed_pulse_variants
+  - external_clock_reset_priority
+  - internal_clock_division_swing
+  - scale_root_aux
+  - preset_save_load
+custom_extensions:
+  - id: segments_323
+    origin: user_requirement_not_original_manual
+    expected: [1, 2, 3, 1, 2, 3, 4, 5, 4, 5, 6, 7, 8, 6, 7, 8]

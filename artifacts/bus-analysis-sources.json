@@ -1,0 +1,42 @@
+{
+  "date": "2026-10-20",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/avr_ioport.c",
+      "sha256": "586aaf22e405923c8ef2dcc6569d14a55b32dd4fdd5351d9aab602a83c5d1345",
+      "role": "simavr1.6 callback/SPI behavior source"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/avr_spi.c",
+      "sha256": "88c5c301a0fd07e7a3e071ddc996882b430a9b8c1cf675cc616c298a10e0d77a",
+      "role": "simavr1.6 callback/SPI behavior source"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/sim_avr.h",
+      "sha256": "60b6e0095617e1767460a23b82d5324a0a64392b3d5d078e52c6f919fc38ed7d",
+      "role": "simavr1.6 callback/SPI behavior source"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/sim_core.c",
+      "sha256": "e0bf6c68648d8e49e41adb0d03008f0009b79941615b3e9cfe7efbbbdf4c5912",
+      "role": "simavr1.6 callback/SPI behavior source"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/sim_io.c",
+      "sha256": "cade47983f2572363529690669dac23ef2542139968b1b596991a611ad2c45cd",
+      "role": "simavr1.6 callback/SPI behavior source"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/sim_irq.c",
+      "sha256": "cd715cf453941fb04bb2804819dc19a2277bd2672ce58e19da69e31c25295263",
+      "role": "simavr1.6 callback/SPI behavior source"
+    },
+    {
+      "url": "https://www.st.com/resource/en/datasheet/stled316s.pdf",
+      "sha256": "fa3b5bab9ef1402b4eb80216eab665e08a4869d1d175a591f570ff1e49619a65",
+      "sections": "8.1-8.4, 9.1-9.2",
+      "role": "command fields and serial interface"
+    }
+  ],
+  "documentsRedistributed": false
+}

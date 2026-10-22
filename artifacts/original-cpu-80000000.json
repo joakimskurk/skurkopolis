@@ -1,0 +1,399 @@
+{
+  "input": {
+    "populatedBytes": 20710,
+    "highestAddress": 20709,
+    "flashCapacity": 32768,
+    "hexSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+    "paddedFlashSha256": "f1c3489b9b3e5dd6de43d6d68bf37a6f4a94a9c77520e1f63fb85f1df2913628"
+  },
+  "boardEmulated": false,
+  "limitations": [
+    "No pin mapping or external peripheral responses.",
+    "GPIO/ADC defaults are simulator artifacts, not board observations.",
+    "Register changes sampled after avr_run are not a bus-write trace.",
+    "CPU execution does not establish successful module boot."
+  ],
+  "simulation": {
+    "scope": "cpu_only_unwired",
+    "requestedMcu": "atmega328",
+    "modelSignature": "1e950f",
+    "fixtureHz": 16000000,
+    "fixtureMillivolts": 5000,
+    "initialEeprom": "all_ff",
+    "fuses": "simavr_defaults_unmeasured",
+    "cycleLimit": 80000000,
+    "cycles": 80000000,
+    "runCalls": 56609614,
+    "finalPc": 1016,
+    "cpuState": 2,
+    "stopReason": "cycle_limit",
+    "boardEmulated": false,
+    "registers": [
+      {
+        "name": "PINB",
+        "dataAddress": 35,
+        "finalValue": 15,
+        "observedChanges": 211798,
+        "firstChangeCycle": 38986
+      },
+      {
+        "name": "DDRB",
+        "dataAddress": 36,
+        "finalValue": 44,
+        "observedChanges": 2621,
+        "firstChangeCycle": 38994
+      },
+      {
+        "name": "PORTB",
+        "dataAddress": 37,
+        "finalValue": 15,
+        "observedChanges": 211798,
+        "firstChangeCycle": 38986
+      },
+      {
+        "name": "PINC",
+        "dataAddress": 38,
+        "finalValue": 29,
+        "observedChanges": 28486,
+        "firstChangeCycle": 39028
+      },
+      {
+        "name": "DDRC",
+        "dataAddress": 39,
+        "finalValue": 63,
+        "observedChanges": 6,
+        "firstChangeCycle": 39010
+      },
+      {
+        "name": "PORTC",
+        "dataAddress": 40,
+        "finalValue": 29,
+        "observedChanges": 28486,
+        "firstChangeCycle": 39028
+      },
+      {
+        "name": "PIND",
+        "dataAddress": 41,
+        "finalValue": 80,
+        "observedChanges": 5668,
+        "firstChangeCycle": 38976
+      },
+      {
+        "name": "DDRD",
+        "dataAddress": 42,
+        "finalValue": 227,
+        "observedChanges": 5,
+        "firstChangeCycle": 39002
+      },
+      {
+        "name": "PORTD",
+        "dataAddress": 43,
+        "finalValue": 80,
+        "observedChanges": 5668,
+        "firstChangeCycle": 38976
+      },
+      {
+        "name": "TIFR0",
+        "dataAddress": 53,
+        "finalValue": 6,
+        "observedChanges": 6253,
+        "firstChangeCycle": 13940
+      },
+      {
+        "name": "TIFR1",
+        "dataAddress": 54,
+        "finalValue": 5,
+        "observedChanges": 1192,
+        "firstChangeCycle": 13967
+      },
+      {
+        "name": "TIFR2",
+        "dataAddress": 55,
+        "finalValue": 7,
+        "observedChanges": 1,
+        "firstChangeCycle": 13981
+      },
+      {
+        "name": "EIFR",
+        "dataAddress": 60,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "EIMSK",
+        "dataAddress": 61,
+        "finalValue": 3,
+        "observedChanges": 1,
+        "firstChangeCycle": 18199160
+      },
+      {
+        "name": "EECR",
+        "dataAddress": 63,
+        "finalValue": 0,
+        "observedChanges": 1330,
+        "firstChangeCycle": 14016
+      },
+      {
+        "name": "TCCR0A",
+        "dataAddress": 68,
+        "finalValue": 3,
+        "observedChanges": 2,
+        "firstChangeCycle": 13867
+      },
+      {
+        "name": "TCCR0B",
+        "dataAddress": 69,
+        "finalValue": 3,
+        "observedChanges": 2,
+        "firstChangeCycle": 13873
+      },
+      {
+        "name": "OCR0A",
+        "dataAddress": 71,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "OCR0B",
+        "dataAddress": 72,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "SPCR",
+        "dataAddress": 76,
+        "finalValue": 80,
+        "observedChanges": 23577,
+        "firstChangeCycle": 17711899
+      },
+      {
+        "name": "SPSR",
+        "dataAddress": 77,
+        "finalValue": 0,
+        "observedChanges": 47154,
+        "firstChangeCycle": 18033740
+      },
+      {
+        "name": "SPDR",
+        "dataAddress": 78,
+        "finalValue": 56,
+        "observedChanges": 20633,
+        "firstChangeCycle": 18032140
+      },
+      {
+        "name": "SMCR",
+        "dataAddress": 83,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "MCUSR",
+        "dataAddress": 84,
+        "finalValue": 1,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "MCUCR",
+        "dataAddress": 85,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "WDTCSR",
+        "dataAddress": 96,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "CLKPR",
+        "dataAddress": 97,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "PCICR",
+        "dataAddress": 104,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "EICRA",
+        "dataAddress": 105,
+        "finalValue": 7,
+        "observedChanges": 1,
+        "firstChangeCycle": 18199157
+      },
+      {
+        "name": "PCMSK0",
+        "dataAddress": 107,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "PCMSK1",
+        "dataAddress": 108,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "PCMSK2",
+        "dataAddress": 109,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "TIMSK0",
+        "dataAddress": 110,
+        "finalValue": 1,
+        "observedChanges": 1,
+        "firstChangeCycle": 13883
+      },
+      {
+        "name": "TIMSK1",
+        "dataAddress": 111,
+        "finalValue": 2,
+        "observedChanges": 1,
+        "firstChangeCycle": 18199117
+      },
+      {
+        "name": "TIMSK2",
+        "dataAddress": 112,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "ADCSRA",
+        "dataAddress": 122,
+        "finalValue": 135,
+        "observedChanges": 4,
+        "firstChangeCycle": 13925
+      },
+      {
+        "name": "ADCSRB",
+        "dataAddress": 123,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "ADMUX",
+        "dataAddress": 124,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "TCCR1A",
+        "dataAddress": 128,
+        "finalValue": 0,
+        "observedChanges": 2,
+        "firstChangeCycle": 13904
+      },
+      {
+        "name": "TCCR1B",
+        "dataAddress": 129,
+        "finalValue": 10,
+        "observedChanges": 5,
+        "firstChangeCycle": 13892
+      },
+      {
+        "name": "OCR1AL",
+        "dataAddress": 136,
+        "finalValue": 175,
+        "observedChanges": 1,
+        "firstChangeCycle": 18199106
+      },
+      {
+        "name": "OCR1AH",
+        "dataAddress": 137,
+        "finalValue": 40,
+        "observedChanges": 1,
+        "firstChangeCycle": 18199104
+      },
+      {
+        "name": "TCCR2A",
+        "dataAddress": 176,
+        "finalValue": 1,
+        "observedChanges": 1,
+        "firstChangeCycle": 13918
+      },
+      {
+        "name": "TCCR2B",
+        "dataAddress": 177,
+        "finalValue": 4,
+        "observedChanges": 1,
+        "firstChangeCycle": 13911
+      },
+      {
+        "name": "TWCR",
+        "dataAddress": 188,
+        "finalValue": 0,
+        "observedChanges": 0,
+        "firstChangeCycle": 0
+      },
+      {
+        "name": "UCSR0B",
+        "dataAddress": 193,
+        "finalValue": 0,
+        "observedChanges": 1,
+        "firstChangeCycle": 13942
+      }
+    ],
+    "topPcSamples": [
+      {
+        "byteAddress": 1014,
+        "samples": 4201841
+      },
+      {
+        "byteAddress": 1016,
+        "samples": 4201840
+      },
+      {
+        "byteAddress": 1024,
+        "samples": 4201678
+      },
+      {
+        "byteAddress": 1026,
+        "samples": 4201678
+      },
+      {
+        "byteAddress": 1018,
+        "samples": 4191362
+      },
+      {
+        "byteAddress": 1028,
+        "samples": 4191200
+      },
+      {
+        "byteAddress": 19122,
+        "samples": 1626495
+      },
+      {
+        "byteAddress": 19124,
+        "samples": 1626495
+      },
+      {
+        "byteAddress": 18036,
+        "samples": 524909
+      },
+      {
+        "byteAddress": 18038,
+        "samples": 524909
+      }
+    ]
+  },
+  "runCompletedToLimit": true
+}

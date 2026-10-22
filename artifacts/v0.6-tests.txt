@@ -1,0 +1,77 @@
+PASS canonical/reset/validation/skip/rest; 72576 oracle pulses; Phrase=65 Engine=80 Pulse=28 bytes (host)
+PASS synthetic peripheral contracts: 74HC4051, 74HC165, STLED316S key/display semantics
+PASS hardware evidence validation: 0 assigned pins, 0 reviewed records; board emulated: false
+test_canonical (test_bridge.Bridge.test_canonical) ... ok
+test_empty (test_bridge.Bridge.test_empty) ... ok
+test_gap_overlap_and_shape (test_bridge.Bridge.test_gap_overlap_and_shape) ... ok
+test_invalid (test_bridge.Bridge.test_invalid) ... ok
+test_max_cycle (test_bridge.Bridge.test_max_cycle) ... ok
+test_bounded_capture_does_not_stop_cpu (test_bus_trace.BusTraceTests.test_bounded_capture_does_not_stop_cpu) ... ok
+test_equal_writes_and_pin_toggle_preserve_device_callback (test_bus_trace.BusTraceTests.test_equal_writes_and_pin_toggle_preserve_device_callback) ... ok
+test_spi_equal_bytes_and_fixed_delay (test_bus_trace.BusTraceTests.test_spi_equal_bytes_and_fixed_delay) ... ok
+test_trace_argument_guards (test_bus_trace.BusTraceTests.test_trace_argument_guards) ... ok
+test_empty_and_invalid_signals (test_bus_trace.DecoderTests.test_empty_and_invalid_signals) ... ok
+test_input_bits_are_unknown (test_bus_trace.DecoderTests.test_input_bits_are_unknown) ... ok
+test_lsb_order_and_strobe_boundary (test_bus_trace.DecoderTests.test_lsb_order_and_strobe_boundary) ... ok
+test_partial_boundaries_and_tail (test_bus_trace.DecoderTests.test_partial_boundaries_and_tail) ... ok
+test_shadow_auto_fixed_and_display_control (test_bus_trace.DecoderTests.test_shadow_auto_fixed_and_display_control) ... ok
+test_spi_candidate_partial_and_complete_groups (test_bus_trace.DecoderTests.test_spi_candidate_partial_and_complete_groups) ... ok
+test_spi_enabled_or_undriven_clock_is_not_gpio_data (test_bus_trace.DecoderTests.test_spi_enabled_or_undriven_clock_is_not_gpio_data) ... ok
+test_ambiguous_role_cannot_plan (test_evidence.EvidenceTests.test_ambiguous_role_cannot_plan) ... ok
+test_analog_not_a_digital_plan (test_evidence.EvidenceTests.test_analog_not_a_digital_plan) ... ok
+test_arbitrary_reference (test_evidence.EvidenceTests.test_arbitrary_reference) ... ok
+test_blank_board_not_ready (test_evidence.EvidenceTests.test_blank_board_not_ready) ... ok
+test_blocked_cli_exit (test_evidence.EvidenceTests.test_blocked_cli_exit) ... ok
+test_duplicate_ids_and_json_keys (test_evidence.EvidenceTests.test_duplicate_ids_and_json_keys) ... ok
+test_each_field_supported (test_evidence.EvidenceTests.test_each_field_supported) ... ok
+test_existing_destination_preserved (test_evidence.EvidenceTests.test_existing_destination_preserved) ... ok
+test_fixed_identity (test_evidence.EvidenceTests.test_fixed_identity) ... ok
+test_ingest_lock_is_respected (test_evidence.EvidenceTests.test_ingest_lock_is_respected) ... ok
+test_measured_signature_mismatch (test_evidence.EvidenceTests.test_measured_signature_mismatch) ... ok
+test_optimized_python_keeps_guards (test_evidence.EvidenceTests.test_optimized_python_keeps_guards) ... ok
+test_path_and_symlink_escape (test_evidence.EvidenceTests.test_path_and_symlink_escape) ... ok
+test_pending_reference (test_evidence.EvidenceTests.test_pending_reference) ... ok
+test_power_clock_reset_not_gpio (test_evidence.EvidenceTests.test_power_clock_reset_not_gpio) ... ok
+test_register_preserves_bytes_pending_and_duplicate (test_evidence.EvidenceTests.test_register_preserves_bytes_pending_and_duplicate) ... ok
+test_review_requires_named_reviewer_and_timezone (test_evidence.EvidenceTests.test_review_requires_named_reviewer_and_timezone) ... ok
+test_reviewed_subset_plan (test_evidence.EvidenceTests.test_reviewed_subset_plan) ... ok
+test_tampered_missing_artifact (test_evidence.EvidenceTests.test_tampered_missing_artifact) ... ok
+test_unattached_conflicting_record (test_evidence.EvidenceTests.test_unattached_conflicting_record) ... ok
+test_unsupported_clock (test_evidence.EvidenceTests.test_unsupported_clock) ... ok
+test_wrong_board_record_rejected (test_evidence.EvidenceTests.test_wrong_board_record_rejected) ... ok
+test_wrong_pin_evidence (test_evidence.EvidenceTests.test_wrong_pin_evidence) ... ok
+test_avr_trace (test_http.HTTP.test_avr_trace) ... 127.0.0.1 - - [20/Oct/2026 05:24:32] "POST /api/trace/avr HTTP/1.1" 200 -
+ok
+test_bad_requests (test_http.HTTP.test_bad_requests) ... 127.0.0.1 - - [20/Oct/2026 05:24:32] "POST /api/trace HTTP/1.1" 400 -
+127.0.0.1 - - [20/Oct/2026 05:24:32] "POST /api/trace HTTP/1.1" 400 -
+127.0.0.1 - - [20/Oct/2026 05:24:32] "POST /api/trace HTTP/1.1" 415 -
+127.0.0.1 - - [20/Oct/2026 05:24:32] "POST /api/trace HTTP/1.1" 400 -
+ok
+test_health (test_http.HTTP.test_health) ... 127.0.0.1 - - [20/Oct/2026 05:24:32] "GET /api/health HTTP/1.1" 200 -
+ok
+test_static_allowlist (test_http.HTTP.test_static_allowlist) ... 127.0.0.1 - - [20/Oct/2026 05:24:32] "GET / HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 05:24:32] "GET /style.css HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 05:24:32] "GET /app.js HTTP/1.1" 200 -
+127.0.0.1 - - [20/Oct/2026 05:24:32] "GET /../core/sequencer.h HTTP/1.1" 404 -
+ok
+test_trace (test_http.HTTP.test_trace) ... 127.0.0.1 - - [20/Oct/2026 05:24:32] "POST /api/trace HTTP/1.1" 200 -
+ok
+test_bad_raw_length_rejected (test_inspector.CpuTests.test_bad_raw_length_rejected) ... ok
+test_invalid_budget_rejected (test_inspector.CpuTests.test_invalid_budget_rejected) ... ok
+test_known_loop_deterministic (test_inspector.CpuTests.test_known_loop_deterministic) ... ok
+test_observes_known_port_change (test_inspector.CpuTests.test_observes_known_port_change) ... ok
+test_checksum_and_length (test_inspector.HexTests.test_checksum_and_length) ... ok
+test_decode_and_pad (test_inspector.HexTests.test_decode_and_pad) ... ok
+test_eof_and_reset_requirements (test_inspector.HexTests.test_eof_and_reset_requirements) ... ok
+test_extended_address_escape (test_inspector.HexTests.test_extended_address_escape) ... ok
+test_invalid_eof_and_extended_shape (test_inspector.HexTests.test_invalid_eof_and_extended_shape) ... ok
+test_overlap_and_out_of_bounds (test_inspector.HexTests.test_overlap_and_out_of_bounds) ... ok
+test_unsupported_and_malformed (test_inspector.HexTests.test_unsupported_and_malformed) ... ok
+test_zero_extended_address (test_inspector.HexTests.test_zero_extended_address) ... ok
+test_non_io_indirect_and_labels_ignored (test_static_sites.StaticSitesTests.test_non_io_indirect_and_labels_ignored) ... ok
+test_synthetic_direct_accesses_and_callers (test_static_sites.StaticSitesTests.test_synthetic_direct_accesses_and_callers) ... ok
+
+----------------------------------------------------------------------
+Ran 58 tests in 0.266s
+
+OK

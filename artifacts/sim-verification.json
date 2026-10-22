@@ -1,0 +1,243 @@
+{
+  "status": "PASS",
+  "fixtures": 131,
+  "pulsesCompared": 16292,
+  "maxInstrumentedRequestCycles": 2828,
+  "maxObservedStackBytesAfterBoot": 19,
+  "canonical": {
+    "ticksPerPulse": 120,
+    "events": [
+      {
+        "stage": 1,
+        "segment": 1,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 48,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 2,
+        "segment": 1,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 50,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 3,
+        "segment": 1,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 55,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 1,
+        "segment": 1,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 48,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 2,
+        "segment": 1,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 50,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 3,
+        "segment": 1,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 55,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 4,
+        "segment": 2,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 53,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 5,
+        "segment": 2,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 57,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 4,
+        "segment": 2,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 53,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 5,
+        "segment": 2,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 57,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 6,
+        "segment": 3,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 55,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 7,
+        "segment": 3,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 59,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 8,
+        "segment": 3,
+        "repeat": 1,
+        "pulse": 1,
+        "note": 60,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 6,
+        "segment": 3,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 55,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 7,
+        "segment": 3,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 59,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      },
+      {
+        "stage": 8,
+        "segment": 3,
+        "repeat": 2,
+        "pulse": 1,
+        "note": 60,
+        "gates": [
+          [
+            0,
+            60
+          ]
+        ]
+      }
+    ],
+    "simulation": {
+      "engine": "simavr",
+      "requestedMcu": "atmega328",
+      "modelSignature": "1e950f",
+      "fixtureHz": 16000000,
+      "flashCapacity": 32768,
+      "sramCapacity": 2048,
+      "eepromCapacity": 1024,
+      "flashImageBytes": 1530,
+      "staticSramBytes": 275,
+      "observedStackBytes": 19,
+      "cycles": 14358,
+      "maxRequestCycles": 897,
+      "boardEmulated": false
+    }
+  },
+  "elfSha256": "db5bfed9e9b25cc06f7be80b2666b86c36d23c09a786b288e15e10e6baad45ff",
+  "limitations": [
+    "No rev010 peripherals",
+    "Synthetic 16 MHz, real clock unknown",
+    "simavr 1.6 ATmega328 alias reports 328P signature",
+    "Cycles include mailbox and encoding; not gate timing",
+    "Observed stack after boot is not worst-case production stack"
+  ]
+}

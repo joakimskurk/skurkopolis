@@ -1,0 +1,1158 @@
+{
+  "schema": 1,
+  "boardEmulated": false,
+  "physicalMapChanged": false,
+  "scope": "firmware_derived_hypotheses",
+  "input": {
+    "populatedBytes": 20710,
+    "highestAddress": 20709,
+    "flashCapacity": 32768,
+    "hexSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+    "paddedFlashSha256": "f1c3489b9b3e5dd6de43d6d68bf37a6f4a94a9c77520e1f63fb85f1df2913628"
+  },
+  "fixtureHz": 16000000,
+  "cycleLimit": 80000000,
+  "traceCoverage": {
+    "schema": 1,
+    "scope": "simavr_callback_observations",
+    "startCycle": 78000000,
+    "capacity": 100000,
+    "stored": 14164,
+    "beforeWindow": 425135,
+    "dropped": 0,
+    "truncated": false,
+    "spiOutputs": 23577,
+    "countOnlyReads": 9789785,
+    "readEventPolicy": "PINx_SPDR_ADC_only_other_reads_counted",
+    "accessCounts": [
+      {
+        "name": "PINB",
+        "address": 35,
+        "reads": 32725,
+        "writes": 0
+      },
+      {
+        "name": "DDRB",
+        "address": 36,
+        "reads": 3934,
+        "writes": 3934
+      },
+      {
+        "name": "PORTB",
+        "address": 37,
+        "reads": 262717,
+        "writes": 262717
+      },
+      {
+        "name": "PINC",
+        "address": 38,
+        "reads": 0,
+        "writes": 0
+      },
+      {
+        "name": "DDRC",
+        "address": 39,
+        "reads": 6,
+        "writes": 6
+      },
+      {
+        "name": "PORTC",
+        "address": 40,
+        "reads": 30129,
+        "writes": 30129
+      },
+      {
+        "name": "PIND",
+        "address": 41,
+        "reads": 1309,
+        "writes": 0
+      },
+      {
+        "name": "DDRD",
+        "address": 42,
+        "reads": 8,
+        "writes": 8
+      },
+      {
+        "name": "PORTD",
+        "address": 43,
+        "reads": 12102,
+        "writes": 11361
+      },
+      {
+        "name": "SPCR",
+        "address": 76,
+        "reads": 26371,
+        "writes": 26372
+      },
+      {
+        "name": "SPSR",
+        "address": 77,
+        "reads": 9454518,
+        "writes": 0
+      },
+      {
+        "name": "SPDR",
+        "address": 78,
+        "reads": 23575,
+        "writes": 23578
+      },
+      {
+        "name": "ADCL",
+        "address": 120,
+        "reads": 0,
+        "writes": 0
+      },
+      {
+        "name": "ADCH",
+        "address": 121,
+        "reads": 0,
+        "writes": 0
+      },
+      {
+        "name": "ADCSRA",
+        "address": 122,
+        "reads": 4,
+        "writes": 4
+      },
+      {
+        "name": "ADCSRB",
+        "address": 123,
+        "reads": 0,
+        "writes": 0
+      },
+      {
+        "name": "ADMUX",
+        "address": 124,
+        "reads": 0,
+        "writes": 0
+      }
+    ]
+  },
+  "capturedCycleRange": [
+    78000690,
+    79999350
+  ],
+  "gpioHypothesis": {
+    "strobe": "PD6",
+    "clock": "PB5",
+    "data": "PB3",
+    "sampling": "rising_LSB_first",
+    "frameCount": 90,
+    "outcomes": {
+      "read_request_only": 42,
+      "write": 48
+    },
+    "firstFrames": [
+      {
+        "startCycle": 78019364,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78020845,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78040716,
+        "startPc": 1620,
+        "partialStart": false,
+        "bytes": [
+          40,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78041408,
+        "partialEnd": false,
+        "bitCount": 16,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78042819,
+        "startPc": 1742,
+        "partialStart": false,
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78045278,
+        "partialEnd": false,
+        "bitCount": 56,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78072427,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78073908,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78111873,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78113354,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78122788,
+        "startPc": 1620,
+        "partialStart": false,
+        "bytes": [
+          40,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78123480,
+        "partialEnd": false,
+        "bitCount": 16,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78127510,
+        "startPc": 1742,
+        "partialStart": false,
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78129969,
+        "partialEnd": false,
+        "bitCount": 56,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78164933,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78166414,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78206933,
+        "startPc": 1620,
+        "partialStart": false,
+        "bytes": [
+          40,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78207625,
+        "partialEnd": false,
+        "bitCount": 16,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78208682,
+        "startPc": 1742,
+        "partialStart": false,
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78211141,
+        "partialEnd": false,
+        "bitCount": 56,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78218085,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78219566,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78257558,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78259039,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78291419,
+        "startPc": 1620,
+        "partialStart": false,
+        "bytes": [
+          40,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78292111,
+        "partialEnd": false,
+        "bitCount": 16,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78293168,
+        "startPc": 1742,
+        "partialStart": false,
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          1,
+          0,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78295627,
+        "partialEnd": false,
+        "bitCount": 56,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78312573,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78314054,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78352116,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78353597,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78373464,
+        "startPc": 1620,
+        "partialStart": false,
+        "bytes": [
+          40,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78374156,
+        "partialEnd": false,
+        "bitCount": 16,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78375567,
+        "startPc": 1742,
+        "partialStart": false,
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          1,
+          0,
+          0
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78378026,
+        "partialEnd": false,
+        "bitCount": 56,
+        "trailingBits": 0,
+        "releasedBits": 0
+      },
+      {
+        "startCycle": 78405172,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78406653,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      },
+      {
+        "startCycle": 78444715,
+        "startPc": 1884,
+        "partialStart": false,
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "unsupportedEdges": 0,
+        "endCycle": 78446196,
+        "partialEnd": false,
+        "bitCount": 24,
+        "trailingBits": 0,
+        "releasedBits": 16
+      }
+    ],
+    "patterns": [
+      {
+        "bytes": [
+          73,
+          null,
+          null
+        ],
+        "count": 42
+      },
+      {
+        "bytes": [
+          40,
+          0
+        ],
+        "count": 24
+      },
+      {
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          1,
+          0,
+          0
+        ],
+        "count": 21
+      },
+      {
+        "bytes": [
+          0,
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        "count": 3
+      }
+    ],
+    "writeShadow": {
+      "pages": [
+        [
+          57,
+          63,
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ],
+        [
+          null,
+          null,
+          null,
+          null
+        ]
+      ],
+      "displayOn": null
+    }
+  },
+  "spiHypotheses": {
+    "PB2": {
+      "frameCount": 0,
+      "firstFrames": [],
+      "lengthCounts": {},
+      "patterns": []
+    },
+    "PC5": {
+      "frameCount": 340,
+      "firstFrames": [
+        {
+          "startCycle": 78000690,
+          "partialStart": true,
+          "bytes": [
+            24,
+            0
+          ],
+          "cycles": [
+            78000690,
+            78002295
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78002299,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78002510,
+          "partialStart": false,
+          "bytes": [
+            32,
+            0
+          ],
+          "cycles": [
+            78004118,
+            78005723
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78005727,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78005844,
+          "partialStart": false,
+          "bytes": [
+            40,
+            0
+          ],
+          "cycles": [
+            78007452,
+            78009057
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78009061,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78009178,
+          "partialStart": false,
+          "bytes": [
+            48,
+            0
+          ],
+          "cycles": [
+            78010786,
+            78012391
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78012395,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78012512,
+          "partialStart": false,
+          "bytes": [
+            56,
+            0
+          ],
+          "cycles": [
+            78014120,
+            78015725
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78015729,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78015846,
+          "partialStart": false,
+          "bytes": [
+            0,
+            0
+          ],
+          "cycles": [
+            78017454,
+            78019059
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78019063,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78045477,
+          "partialStart": false,
+          "bytes": [
+            8,
+            0
+          ],
+          "cycles": [
+            78047085,
+            78048690
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78048694,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78048811,
+          "partialStart": false,
+          "bytes": [
+            16,
+            0
+          ],
+          "cycles": [
+            78050419,
+            78052024
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78052028,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78052239,
+          "partialStart": false,
+          "bytes": [
+            24,
+            0
+          ],
+          "cycles": [
+            78053847,
+            78055452
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78055456,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78055573,
+          "partialStart": false,
+          "bytes": [
+            32,
+            0
+          ],
+          "cycles": [
+            78057181,
+            78058786
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78058790,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78058907,
+          "partialStart": false,
+          "bytes": [
+            40,
+            0
+          ],
+          "cycles": [
+            78060515,
+            78062120
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78062124,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78062241,
+          "partialStart": false,
+          "bytes": [
+            48,
+            0
+          ],
+          "cycles": [
+            78063849,
+            78065454
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78065458,
+          "partialEnd": false
+        }
+      ],
+      "lengthCounts": {
+        "2": 340
+      },
+      "patterns": [
+        {
+          "bytes": [
+            24,
+            0
+          ],
+          "count": 43
+        },
+        {
+          "bytes": [
+            32,
+            0
+          ],
+          "count": 43
+        },
+        {
+          "bytes": [
+            40,
+            0
+          ],
+          "count": 43
+        },
+        {
+          "bytes": [
+            48,
+            0
+          ],
+          "count": 43
+        },
+        {
+          "bytes": [
+            56,
+            0
+          ],
+          "count": 42
+        },
+        {
+          "bytes": [
+            0,
+            0
+          ],
+          "count": 42
+        },
+        {
+          "bytes": [
+            8,
+            0
+          ],
+          "count": 42
+        },
+        {
+          "bytes": [
+            16,
+            0
+          ],
+          "count": 42
+        }
+      ]
+    },
+    "PC4": {
+      "frameCount": 42,
+      "firstFrames": [
+        {
+          "startCycle": 78028054,
+          "partialStart": false,
+          "bytes": [
+            32,
+            0
+          ],
+          "cycles": [
+            78029674,
+            78031279
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78031283,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78081117,
+          "partialStart": false,
+          "bytes": [
+            40,
+            0
+          ],
+          "cycles": [
+            78082737,
+            78084342
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78084346,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78134271,
+          "partialStart": false,
+          "bytes": [
+            48,
+            0
+          ],
+          "cycles": [
+            78135891,
+            78137496
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78137500,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78173717,
+          "partialStart": false,
+          "bytes": [
+            56,
+            0
+          ],
+          "cycles": [
+            78175337,
+            78176942
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78176946,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78226777,
+          "partialStart": false,
+          "bytes": [
+            0,
+            0
+          ],
+          "cycles": [
+            78228397,
+            78230002
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78230006,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78266342,
+          "partialStart": false,
+          "bytes": [
+            8,
+            0
+          ],
+          "cycles": [
+            78267962,
+            78269567
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78269571,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78321357,
+          "partialStart": false,
+          "bytes": [
+            16,
+            0
+          ],
+          "cycles": [
+            78322977,
+            78324582
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78324586,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78360806,
+          "partialStart": false,
+          "bytes": [
+            24,
+            0
+          ],
+          "cycles": [
+            78362426,
+            78364031
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78364035,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78413956,
+          "partialStart": false,
+          "bytes": [
+            32,
+            0
+          ],
+          "cycles": [
+            78415576,
+            78417181
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78417185,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78467015,
+          "partialStart": false,
+          "bytes": [
+            40,
+            0
+          ],
+          "cycles": [
+            78468635,
+            78470240
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78470244,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78506461,
+          "partialStart": false,
+          "bytes": [
+            48,
+            0
+          ],
+          "cycles": [
+            78508081,
+            78509686
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78509690,
+          "partialEnd": false
+        },
+        {
+          "startCycle": 78559616,
+          "partialStart": false,
+          "bytes": [
+            56,
+            0
+          ],
+          "cycles": [
+            78561236,
+            78562841
+          ],
+          "spcr": [
+            80,
+            80
+          ],
+          "selectDriven": true,
+          "endCycle": 78562845,
+          "partialEnd": false
+        }
+      ],
+      "lengthCounts": {
+        "2": 42
+      },
+      "patterns": [
+        {
+          "bytes": [
+            32,
+            0
+          ],
+          "count": 6
+        },
+        {
+          "bytes": [
+            40,
+            0
+          ],
+          "count": 6
+        },
+        {
+          "bytes": [
+            48,
+            0
+          ],
+          "count": 5
+        },
+        {
+          "bytes": [
+            56,
+            0
+          ],
+          "count": 5
+        },
+        {
+          "bytes": [
+            0,
+            0
+          ],
+          "count": 5
+        },
+        {
+          "bytes": [
+            8,
+            0
+          ],
+          "count": 5
+        },
+        {
+          "bytes": [
+            16,
+            0
+          ],
+          "count": 5
+        },
+        {
+          "bytes": [
+            24,
+            0
+          ],
+          "count": 5
+        }
+      ]
+    }
+  },
+  "limitations": [
+    "Candidate signal assignments are caller-supplied hypotheses, not continuity evidence.",
+    "No physical chip identity, panel mapping, voltage, timing parity or module boot is established.",
+    "SPI callbacks use the simavr 1.6 fixed 100 us delay, not configured wire timing.",
+    "GPIO input-direction bits remain unknown; PIN defaults are not peripheral responses.",
+    "Write shadow covers supported STLED commands only; no keyscan/IRQ/read model is attached.",
+    "Counts and patterns describe retained events only; inspect truncation and partial frames."
+  ],
+  "traceSha256": "7620e286d8691957cdd0cd5f95a952a85c92590bdcd172c69663bcf341a472e2"
+}

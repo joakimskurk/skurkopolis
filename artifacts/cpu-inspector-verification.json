@@ -1,0 +1,37 @@
+{
+  "version": "0.5.0",
+  "date": "2026-10-18",
+  "pythonTestsTotal": 45,
+  "pythonTestsPassed": 45,
+  "skipped": 0,
+  "nativeOraclePulses": 72576,
+  "freshAvrParity": {
+    "runs": 131,
+    "pulses": 16292
+  },
+  "originalFirmwareRuns": [
+    {
+      "cycleLimit": 2000000,
+      "cyclesObserved": 2000002,
+      "reportedCpuCrash": false
+    },
+    {
+      "cycleLimit": 16000000,
+      "cyclesObserved": 16000000,
+      "identicalRepeat": true,
+      "reportedCpuCrash": false
+    },
+    {
+      "cycleLimit": 80000000,
+      "cyclesObserved": 80000000,
+      "identicalRepeat": true,
+      "reportedCpuCrash": false
+    }
+  ],
+  "boardEmulated": false,
+  "boardBootVerified": false,
+  "hardwareWritten": false,
+  "dockerRun": false,
+  "cmakeRun": false,
+  "browserRun": false
+}

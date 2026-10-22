@@ -1,0 +1,726 @@
+{
+  "schema": 1,
+  "version": "0.7.0",
+  "date": "2026-10-20",
+  "input": {
+    "populatedBytes": 20710,
+    "highestAddress": 20709,
+    "flashCapacity": 32768,
+    "hexSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+    "paddedFlashSha256": "f1c3489b9b3e5dd6de43d6d68bf37a6f4a94a9c77520e1f63fb85f1df2913628"
+  },
+  "boardEmulated": false,
+  "physicalMapChanged": false,
+  "unwiredV06TracePreserved": true,
+  "unwiredTraceSha256": "9c474fa8744ea93cae9abc51e5e31b5e8cd2362bf4518c36af26e292d7519ead",
+  "experiments": [
+    {
+      "name": "neutral",
+      "fixture": {
+        "schema": 1,
+        "profile": "rev010-hypothesis-v1",
+        "keyBytes": [
+          0,
+          0
+        ],
+        "spiWords": {
+          "PC5": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "PC4": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "keyEvents": []
+      },
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "cycleLimit": 30000000,
+      "stopReason": "cycle_limit",
+      "finalPc": 19548,
+      "repeatIdentical": true,
+      "tracedAndUntracedReportIdentical": true,
+      "traceSha256": "519494c193ce295c2a5f718f3b07f91c5d4ab227c06ad4e9eb663895054c98a5",
+      "retainedEvents": 85477,
+      "keyReadWordCounts": {
+        "0": 256
+      },
+      "partialKeyBitsAtStop": 0,
+      "cpuSpiReads": {
+        "PC5": {
+          "wordCounts": {
+            "0": 2048
+          },
+          "partialWordAtStop": false
+        },
+        "PC4": {
+          "wordCounts": {
+            "0": 255
+          },
+          "partialWordAtStop": false
+        }
+      },
+      "responseFixture": {
+        "profile": "rev010-hypothesis-v1",
+        "boardEmulated": false,
+        "spiTiming": "simavr1.6_fixed100us",
+        "keyInputAdapter": "sampled_PINB3_no_IRQ",
+        "stled": {
+          "frames": 545,
+          "commands": 545,
+          "keyRequests": 256,
+          "keyComplete": 256,
+          "partialReads": 0,
+          "pinReadOverrides": 4096,
+          "writeBytes": 1003,
+          "unsupported": 0,
+          "directionFaults": 0,
+          "partialBytes": 0,
+          "displayOn": true,
+          "keyBytes": [
+            0,
+            0
+          ],
+          "pages": [
+            [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            [
+              0
+            ],
+            [
+              125,
+              119,
+              119,
+              119
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "spiResponses": 4606,
+        "spiUnserved": 3,
+        "spiFaults": 0,
+        "scans": [
+          {
+            "select": "PC5",
+            "frames": 2049,
+            "complete": 2048,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 4096,
+            "channelReads": [
+              256,
+              256,
+              256,
+              256,
+              256,
+              256,
+              256,
+              256
+            ]
+          },
+          {
+            "select": "PC4",
+            "frames": 256,
+            "complete": 255,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 510,
+            "channelReads": [
+              31,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ]
+          }
+        ],
+        "eventsApplied": 0,
+        "keyEvents": []
+      }
+    },
+    {
+      "name": "channel-ramp",
+      "fixture": {
+        "schema": 1,
+        "profile": "rev010-hypothesis-v1",
+        "keyBytes": [
+          0,
+          0
+        ],
+        "spiWords": {
+          "PC5": [
+            0,
+            128,
+            256,
+            384,
+            512,
+            640,
+            768,
+            896
+          ],
+          "PC4": [
+            64,
+            192,
+            320,
+            448,
+            576,
+            704,
+            832,
+            960
+          ]
+        },
+        "keyEvents": []
+      },
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "cycleLimit": 30000000,
+      "stopReason": "cycle_limit",
+      "finalPc": 1028,
+      "repeatIdentical": true,
+      "tracedAndUntracedReportIdentical": true,
+      "traceSha256": "46698c31d69c2d9d660de17f26f1f4e34b0912ecd4300bdbdc5eca600a30df6d",
+      "retainedEvents": 85740,
+      "keyReadWordCounts": {
+        "0": 257
+      },
+      "partialKeyBitsAtStop": 0,
+      "cpuSpiReads": {
+        "PC5": {
+          "wordCounts": {
+            "128": 258,
+            "256": 257,
+            "384": 257,
+            "512": 257,
+            "640": 257,
+            "768": 257,
+            "896": 257,
+            "0": 257
+          },
+          "partialWordAtStop": true
+        },
+        "PC4": {
+          "wordCounts": {
+            "192": 33,
+            "320": 32,
+            "448": 32,
+            "576": 32,
+            "704": 32,
+            "832": 32,
+            "960": 32,
+            "64": 32
+          },
+          "partialWordAtStop": false
+        }
+      },
+      "responseFixture": {
+        "profile": "rev010-hypothesis-v1",
+        "boardEmulated": false,
+        "spiTiming": "simavr1.6_fixed100us",
+        "keyInputAdapter": "sampled_PINB3_no_IRQ",
+        "stled": {
+          "frames": 546,
+          "commands": 546,
+          "keyRequests": 257,
+          "keyComplete": 257,
+          "partialReads": 0,
+          "pinReadOverrides": 4112,
+          "writeBytes": 1003,
+          "unsupported": 0,
+          "directionFaults": 0,
+          "partialBytes": 0,
+          "displayOn": true,
+          "keyBytes": [
+            0,
+            0
+          ],
+          "pages": [
+            [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            [
+              0
+            ],
+            [
+              125,
+              119,
+              119,
+              119
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "spiResponses": 4629,
+        "spiUnserved": 3,
+        "spiFaults": 0,
+        "scans": [
+          {
+            "select": "PC5",
+            "frames": 2059,
+            "complete": 2057,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 4115,
+            "channelReads": [
+              257,
+              258,
+              257,
+              257,
+              257,
+              257,
+              257,
+              257
+            ]
+          },
+          {
+            "select": "PC4",
+            "frames": 258,
+            "complete": 257,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 514,
+            "channelReads": [
+              32,
+              33,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ]
+          }
+        ],
+        "eventsApplied": 0,
+        "keyEvents": []
+      }
+    },
+    {
+      "name": "key-pulse",
+      "fixture": {
+        "schema": 1,
+        "profile": "rev010-hypothesis-v1",
+        "keyBytes": [
+          0,
+          0
+        ],
+        "spiWords": {
+          "PC5": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "PC4": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "keyEvents": [
+          {
+            "cycle": 22000000,
+            "bytes": [
+              1,
+              0
+            ]
+          },
+          {
+            "cycle": 24000000,
+            "bytes": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "cycleLimit": 30000000,
+      "stopReason": "cycle_limit",
+      "finalPc": 1018,
+      "repeatIdentical": true,
+      "tracedAndUntracedReportIdentical": true,
+      "traceSha256": "acf73a7e004e34fb5bcd196e6852be00e90405b6a56622aee548e989655b3e60",
+      "retainedEvents": 85581,
+      "keyReadWordCounts": {
+        "0": 213,
+        "1": 43
+      },
+      "partialKeyBitsAtStop": 0,
+      "cpuSpiReads": {
+        "PC5": {
+          "wordCounts": {
+            "0": 2054
+          },
+          "partialWordAtStop": false
+        },
+        "PC4": {
+          "wordCounts": {
+            "0": 256
+          },
+          "partialWordAtStop": false
+        }
+      },
+      "responseFixture": {
+        "profile": "rev010-hypothesis-v1",
+        "boardEmulated": false,
+        "spiTiming": "simavr1.6_fixed100us",
+        "keyInputAdapter": "sampled_PINB3_no_IRQ",
+        "stled": {
+          "frames": 545,
+          "commands": 545,
+          "keyRequests": 256,
+          "keyComplete": 256,
+          "partialReads": 0,
+          "pinReadOverrides": 4096,
+          "writeBytes": 1003,
+          "unsupported": 0,
+          "directionFaults": 0,
+          "partialBytes": 0,
+          "displayOn": true,
+          "keyBytes": [
+            0,
+            0
+          ],
+          "pages": [
+            [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            [
+              0
+            ],
+            [
+              125,
+              119,
+              119,
+              119
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "spiResponses": 4620,
+        "spiUnserved": 3,
+        "spiFaults": 0,
+        "scans": [
+          {
+            "select": "PC5",
+            "frames": 2056,
+            "complete": 2054,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 4108,
+            "channelReads": [
+              256,
+              257,
+              257,
+              257,
+              257,
+              257,
+              257,
+              256
+            ]
+          },
+          {
+            "select": "PC4",
+            "frames": 257,
+            "complete": 256,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 512,
+            "channelReads": [
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ]
+          }
+        ],
+        "eventsApplied": 2,
+        "keyEvents": [
+          {
+            "requestedCycle": 22000000,
+            "applied": true,
+            "appliedCycle": 22000000,
+            "bytes": [
+              1,
+              0
+            ]
+          },
+          {
+            "requestedCycle": 24000000,
+            "applied": true,
+            "appliedCycle": 24000001,
+            "bytes": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "name": "channel-ramp-key-pulse",
+      "fixture": {
+        "schema": 1,
+        "profile": "rev010-hypothesis-v1",
+        "keyBytes": [
+          0,
+          0
+        ],
+        "spiWords": {
+          "PC5": [
+            0,
+            128,
+            256,
+            384,
+            512,
+            640,
+            768,
+            896
+          ],
+          "PC4": [
+            64,
+            192,
+            320,
+            448,
+            576,
+            704,
+            832,
+            960
+          ]
+        },
+        "keyEvents": [
+          {
+            "cycle": 22000000,
+            "bytes": [
+              1,
+              0
+            ]
+          },
+          {
+            "cycle": 24000000,
+            "bytes": [
+              0,
+              0
+            ]
+          }
+        ]
+      },
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "cycleLimit": 30000000,
+      "stopReason": "cycle_limit",
+      "finalPc": 1024,
+      "repeatIdentical": true,
+      "tracedAndUntracedReportIdentical": true,
+      "traceSha256": "8396233d4d29f734ff13b4f3b57dc10b2b986935f93af31ed7f128084d3c25e0",
+      "retainedEvents": 85770,
+      "keyReadWordCounts": {
+        "0": 214,
+        "1": 43
+      },
+      "partialKeyBitsAtStop": 0,
+      "cpuSpiReads": {
+        "PC5": {
+          "wordCounts": {
+            "128": 258,
+            "256": 258,
+            "384": 258,
+            "512": 258,
+            "640": 257,
+            "768": 257,
+            "896": 257,
+            "0": 257
+          },
+          "partialWordAtStop": true
+        },
+        "PC4": {
+          "wordCounts": {
+            "192": 33,
+            "320": 32,
+            "448": 32,
+            "576": 32,
+            "704": 32,
+            "832": 32,
+            "960": 32,
+            "64": 32
+          },
+          "partialWordAtStop": false
+        }
+      },
+      "responseFixture": {
+        "profile": "rev010-hypothesis-v1",
+        "boardEmulated": false,
+        "spiTiming": "simavr1.6_fixed100us",
+        "keyInputAdapter": "sampled_PINB3_no_IRQ",
+        "stled": {
+          "frames": 546,
+          "commands": 546,
+          "keyRequests": 257,
+          "keyComplete": 257,
+          "partialReads": 0,
+          "pinReadOverrides": 4112,
+          "writeBytes": 1003,
+          "unsupported": 0,
+          "directionFaults": 0,
+          "partialBytes": 0,
+          "displayOn": true,
+          "keyBytes": [
+            0,
+            0
+          ],
+          "pages": [
+            [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            [
+              0
+            ],
+            [
+              125,
+              119,
+              119,
+              119
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        },
+        "spiResponses": 4635,
+        "spiUnserved": 3,
+        "spiFaults": 0,
+        "scans": [
+          {
+            "select": "PC5",
+            "frames": 2062,
+            "complete": 2060,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 4121,
+            "channelReads": [
+              257,
+              258,
+              258,
+              258,
+              258,
+              257,
+              257,
+              257
+            ]
+          },
+          {
+            "select": "PC4",
+            "frames": 258,
+            "complete": 257,
+            "partial": 1,
+            "malformed": 0,
+            "responses": 514,
+            "channelReads": [
+              32,
+              33,
+              32,
+              32,
+              32,
+              32,
+              32,
+              32
+            ]
+          }
+        ],
+        "eventsApplied": 2,
+        "keyEvents": [
+          {
+            "requestedCycle": 22000000,
+            "applied": true,
+            "appliedCycle": 22000001,
+            "bytes": [
+              1,
+              0
+            ]
+          },
+          {
+            "requestedCycle": 24000000,
+            "applied": true,
+            "appliedCycle": 24000000,
+            "bytes": [
+              0,
+              0
+            ]
+          }
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "No physical net, ADC identity/packing or panel/key label is verified.",
+    "Sampled PINB3 key input and SPI byte response adapters; no electrical or IRQ simulation.",
+    "SPI fixed100us timing, default fuses and all-FF EEPROM are retained synthetic conditions.",
+    "Changed display RAM proves changed firmware output under stimuli, not successful module boot or musical parity."
+  ]
+}

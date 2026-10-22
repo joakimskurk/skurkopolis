@@ -1,0 +1,31 @@
+{
+  "schema": 1,
+  "board": "METROPOLIS Main rev010",
+  "metadataValid": true,
+  "inputs": {
+    "hardwareMapSha256": "d5b923dab8c52c5999f4e0d75817b1324f3ceae5ece96f269f51a111ca926d79",
+    "registrySha256": "846a2ffb6ff80a8af0763511dd7ca2195cdf82d37b12424a8959557831a6978f"
+  },
+  "reviewedRecords": 0,
+  "pendingRecords": 0,
+  "assignedPins": 0,
+  "completeBindings": 0,
+  "missingMetadata": [
+    "electronic_signature",
+    "clock_hz",
+    "fuses",
+    "lock_bits"
+  ],
+  "requestedRoles": [],
+  "missingRoles": [],
+  "bindings": [],
+  "bindingArtifacts": {},
+  "wiringSubsetReady": false,
+  "boardEmulated": false,
+  "originalFirmwareRunnable": false,
+  "limitations": [
+    "Checks recorded evidence consistency, not measurement truth.",
+    "A wiring plan does not attach simavr or qualify peripheral timing.",
+    "Scope is the explicitly requested digital roles only."
+  ]
+}

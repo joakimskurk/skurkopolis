@@ -1,0 +1,7 @@
+build
+.git
+firmware-local
+**/__pycache__
+
+# Private measurement files and firmware dumps stay local.
+evidence/local/

@@ -1,0 +1,26 @@
+{
+  "sourceUrl": "https://intellijel.com/downloads/firmware/Intellijel_Firmware_Updater_macOS_2025-04-17.zip",
+  "archiveSha256": "0df68db25d7f4c9d383e775c768684ba9d8e4fc701a1ed4f33d8496b7f304e3a",
+  "member": "Intellijel Firmware Updater.app/Contents/Resources/firmware/metropolis_1.37.hex",
+  "revisionFamily": "rev009 or higher",
+  "firmwareVersion": "1.37",
+  "populatedBytes": 20710,
+  "highestAddress": 20709,
+  "flashCapacity": 32768,
+  "hexSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+  "paddedFlashSha256": "f1c3489b9b3e5dd6de43d6d68bf37a6f4a94a9c77520e1f63fb85f1df2913628",
+  "hardwareWritten": false,
+  "updaterExecuted": false,
+  "date": "2026-10-18",
+  "firmwareRedistributed": false,
+  "updaterBinaryExecuted": false,
+  "revisionSelectionEvidence": [
+    "Official package instructions/metropolis.html identifies rev009 or higher",
+    "Updater strings pair Metropolis (rev009 or Higher) with metropolis_ prefix; old revision uses metropolis0_"
+  ],
+  "additionalLocalArtifact": {
+    "name": "metropolis0_1.37.hex",
+    "sha256": "2409d9a73626d6709eb2a28b0ea744dd11e7a696b38a1418c0fed825bb8c6529",
+    "executed": false
+  }
+}

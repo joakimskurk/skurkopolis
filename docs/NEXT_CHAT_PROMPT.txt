@@ -1,0 +1,36 @@
+Continue Skurkopolis / Metropolis Firmware Lab v0.8.0, 2026-10-22.
+Repository: https://github.com/joakimskurk/skurkopolis
+Read README.md, docs/VERIFICATION.md, docs/SPI_TIMING.md and docs/RESPONSE_FIXTURE.md.
+Historical product direction remains in ORIGINAL_HANDOFF.md; its implementation status is obsolete.
+
+User has no programmer/measurement equipment now. Continue software work without hardware writes.
+Existing native/custom AVR browser engines use our segment core. Original firmware is CLI only.
+No 1:1 board emulator or successful original-module boot is claimed.
+
+v0.7: optional synthetic STLED key input (PD6 STB/PB5 CLK/PB3 sampled input) and
+PC5/PC4 eight-channel 16-bit SPI responses; strict profiles and timed key events.
+Physical map and registry remain unchanged. All wiring/ADC packing is hypothetical.
+
+v0.8: optional --spi-timing avr-divider-v1, retiming the native simavr1.6 SPI timer
+to eight SCK periods sampled from SPR1:0/SPI2X at SPDR write. Native callback/data/IRQ
+path retained. Default fixed100us untouched. Runtime checks require expected native
+timer/module layout. SPIF clearing and busy writes still have native inaccuracies;
+do not claim full AVR SPI conformance. See explicit counters and limitations.
+
+74 Python tests with no skips, 72,576 native pulses, pure C protocol tests passed.
+Four original-image timing scenarios: 23.5M cycles; complete 23M-23.5M trace window,
+repeated twice and matched untraced reports, expected key/channel data, no faults or
+busy/non-master writes. All transfers /4, at most one-cycle callback lateness.
+Display page0 identical at this stop point in all scenarios. v0.7 fixed100us runs
+used 30M stop points and differing display states, so not a same-time causal comparison.
+Unwired v0.6 trace SHA remains 9c474fa8744ea93cae9abc51e5e31b5e8cd2362bf4518c36af26e292d7519ead.
+
+Reproduce using scripts/build-inspector.sh, RUN_AVR_TESTS=1 RUN_CPU_TESTS=1 scripts/test.sh,
+and scripts/verify-response-fixture.py --spi-timing avr-divider-v1. Import the official
+hash-pinned updater archive locally first. Never commit original firmware, updater,
+disassembly or private raw traces. firmware-local and evidence/local are ignored.
+
+Next: qualify SPI status semantics and controlled-input/observable-behavior correlation.
+Keep synthetic profiles separate from real wiring. Resolve ADC identity, panel labels,
+clock/fuses, EEPROM/calibration and physical behavior only with evidence.
+Docker/CMake/browser/audio gates not run; 131-run parity campaign is retained v0.5 evidence.

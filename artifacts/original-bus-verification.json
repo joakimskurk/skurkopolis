@@ -1,0 +1,41 @@
+{
+  "schema": 1,
+  "version": "0.6.0",
+  "date": "2026-10-20",
+  "input": {
+    "populatedBytes": 20710,
+    "highestAddress": 20709,
+    "flashCapacity": 32768,
+    "hexSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+    "paddedFlashSha256": "f1c3489b9b3e5dd6de43d6d68bf37a6f4a94a9c77520e1f63fb85f1df2913628"
+  },
+  "experiments": [
+    {
+      "label": "startup",
+      "cycleLimit": 20000000,
+      "traceStart": 0,
+      "repeatIdentical": true,
+      "untracedCpuReportIdentical": true,
+      "retainedEvents": 13414,
+      "spiOutputCallbacksWholeRun": 703,
+      "traceSha256": "9c474fa8744ea93cae9abc51e5e31b5e8cd2362bf4518c36af26e292d7519ead"
+    },
+    {
+      "label": "late",
+      "cycleLimit": 80000000,
+      "traceStart": 78000000,
+      "repeatIdentical": true,
+      "untracedCpuReportIdentical": true,
+      "retainedEvents": 14164,
+      "spiOutputCallbacksWholeRun": 23577,
+      "traceSha256": "7620e286d8691957cdd0cd5f95a952a85c92590bdcd172c69663bcf341a472e2"
+    }
+  ],
+  "physicalMapChanged": false,
+  "boardEmulated": false,
+  "claims": [
+    "Original CPU callback traces reproduced for the stated synthetic fixture.",
+    "Sampled CPU reports match uninstrumented runs; this is not full simulator-state equivalence.",
+    "No successful module boot, physical wiring, panel mapping or timing parity is certified."
+  ]
+}

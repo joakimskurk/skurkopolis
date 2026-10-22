@@ -1,0 +1,47 @@
+{
+  "schema": 1,
+  "firmwareHexSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+  "status": "firmware_derived_hypotheses_only",
+  "physicalMap": false,
+  "runtimeAttached": false,
+  "stledCandidate": {
+    "strobe": "PD6",
+    "clock": "PB5",
+    "data": "PB3",
+    "activeStrobe": 0,
+    "bitOrder": "lsb",
+    "sampleEdge": "rising",
+    "irq": null
+  },
+  "spiCandidates": [
+    {
+      "select": "PB2",
+      "activeLevel": 0,
+      "observedFrameLengths": [
+        3
+      ],
+      "part": null
+    },
+    {
+      "select": "PC5",
+      "activeLevel": 0,
+      "observedFrameLengths": [
+        2
+      ],
+      "part": null
+    },
+    {
+      "select": "PC4",
+      "activeLevel": 0,
+      "observedFrameLengths": [
+        2
+      ],
+      "part": null
+    }
+  ],
+  "warnings": [
+    "Not accepted as physical evidence by host/evidence.py.",
+    "No external response model is attached.",
+    "SPI output notifications in simavr1.6 use fixed100us completion."
+  ]
+}

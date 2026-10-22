@@ -1,0 +1,1 @@
+SIMULATOR TEST FIRMWARE ONLY. No Metropolis rev010 I/O exists in this firmware. Never flash these ELF/HEX files to your original or replacement MCU.
