@@ -1,0 +1,53 @@
+# Skurkopolis / Metropolis Firmware Lab 0.8.0
+
+Original Metropolis 1.37 can receive synthetic key and channel responses in a bounded CPU experiment. An optional SPI timing profile now derives byte completion from the AVR clock-divider registers. The default simavr timing remains unchanged for reproducible comparisons.
+
+**This is not yet a working or 1:1 Metropolis emulator.** Wiring, ADC identity/packing, panel mapping and electrical behavior remain hypotheses. The browser runs our own segment engine. Original firmware, updater binaries and disassembly are excluded.
+
+## New in v0.8
+
+* Opt-in `--spi-timing avr-divider-v1`: eight SCK periods per byte, all eight divider settings tested at two CPU frequencies.
+* Native simavr completion callbacks retained, with explicit counters for busy/non-master writes and callback lateness. Native flag/collision limitations remain.
+* Four original-image scenarios, repeated traced and untraced, with compact verification reports.
+* v0.7 synthetic key and SPI response fixtures, strict profile validation, timed key events and pure C protocol tests are included.
+
+Read `docs/SPI_TIMING.md`, `docs/RESPONSE_FIXTURE.md` and `docs/VERIFICATION.md`.
+
+## Existing web lab
+
+```sh
+docker compose up --build
+```
+
+Open http://localhost:8080. Native and AVR modes retain the custom segment engine. Original-firmware inspection remains CLI-only. Docker launch and browser/audio acceptance were not executed in this milestone.
+
+## Build and tests
+
+```sh
+sh scripts/build-sim.sh
+sh scripts/build-inspector.sh
+RUN_AVR_TESTS=1 RUN_CPU_TESTS=1 sh scripts/test.sh
+```
+
+Requires Python 3.9+, g++, AVR GCC/libc/binutils and simavr 1.6 development files. Without AVR/simavr, `sh scripts/test.sh` runs native tests and explicitly skips CPU/AVR integration tests. v0.8 ran all **74 Python tests with no skips**, plus 72,576 native oracle pulses. Existing v0.5 parity reports remain versioned evidence.
+
+## Original-firmware experiments
+
+Follow `docs/CPU_INSPECTION.md` to import the hash-pinned official updater archive. The importer reads ZIP members on any host OS and never executes the updater.
+
+```sh
+python3 scripts/import-official-firmware.py /path/to/Intellijel_Firmware_Updater_macOS_2025-04-17.zip
+sh scripts/build-inspector.sh
+python3 scripts/verify-original-bus.py
+```
+
+The verifier reproduces 20M-cycle startup and 80M-cycle late-window experiments. Raw traces remain in excluded `firmware-local/analysis/`; compact observations go in `artifacts/`. Candidate assignments are explicit and are not installed into the verified map. Physical access is unnecessary for this analysis.
+
+Run the synthetic response experiments with:
+
+```sh
+python3 scripts/verify-response-fixture.py
+python3 scripts/verify-response-fixture.py --spi-timing avr-divider-v1
+```
+
+Next: qualify SPI status-register semantics and map synthetic key/channel stimuli to observable firmware behavior. Board integration follows verified evidence. Real routing, clock/fuses, EEPROM/calibration, panel mapping and electrical behavior remain open. Included AVR binaries are our simulator probes and must never be flashed onto the module.
