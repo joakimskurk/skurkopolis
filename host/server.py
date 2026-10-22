@@ -48,7 +48,7 @@ class Handler(BaseHTTPRequestHandler):
         self.send_response(status);self.send_header('Content-Type',mime);self.send_header('Content-Length',str(len(data)))
         self.send_header('Cache-Control','no-store');self.send_header('X-Content-Type-Options','nosniff');self.end_headers();self.wfile.write(data)
     def do_GET(self):
-        if self.path=='/api/health': return self.send(200,{'engine':'native-cpp','version':'0.8.0','hardware':False,'avrBuilt':(ROOT/'build/sim_runner').is_file() and (ROOT/'build/avr/sim-probe.elf').is_file()})
+        if self.path=='/api/health': return self.send(200,{'engine':'native-cpp','version':'0.9.0','hardware':False,'avrBuilt':(ROOT/'build/sim_runner').is_file() and (ROOT/'build/avr/sim-probe.elf').is_file()})
         files={'/':('index.html','text/html; charset=utf-8'),'/app.js':('app.js','text/javascript'),'/style.css':('style.css','text/css')}
         if self.path not in files:return self.send(404,{'error':'Not found'})
         name,mime=files[self.path];self.send(200,(ROOT/'web'/name).read_bytes(),mime)

@@ -1,17 +1,17 @@
-# Skurkopolis / Metropolis Firmware Lab 0.8.0
+# Skurkopolis / Metropolis Firmware Lab 0.9.0
 
 Original Metropolis 1.37 can receive synthetic key and channel responses in a bounded CPU experiment. An optional SPI timing profile now derives byte completion from the AVR clock-divider registers. The default simavr timing remains unchanged for reproducible comparisons.
 
 **This is not yet a working or 1:1 Metropolis emulator.** Wiring, ADC identity/packing, panel mapping and electrical behavior remain hypotheses. The browser runs our own segment engine. Original firmware, updater binaries and disassembly are excluded.
 
-## New in v0.8
+## New in v0.9
 
-* Opt-in `--spi-timing avr-divider-v1`: eight SCK periods per byte, all eight divider settings tested at two CPU frequencies.
-* Native simavr completion callbacks retained, with explicit counters for busy/non-master writes and callback lateness. Native flag/collision limitations remain.
-* Four original-image scenarios, repeated traced and untraced, with compact verification reports.
-* v0.7 synthetic key and SPI response fixtures, strict profile validation, timed key events and pure C protocol tests are included.
+* Opt-in `--spi-status avr-master-v1`: separate transmit/receive state, retained receive data, status-then-data flag acknowledgement, read-only status flags, write-collision rejection and interrupt handling.
+* Status behavior and byte timing are independent options. All previous defaults and the four archived v0.8 trace hashes remain unchanged.
+* A 2×2 timing/status comparison at identical cycle bounds, plus one-input sweeps of 16 raw key bits and 16 synthetic channels.
+* Repeatability, trace-passivity and actual CPU receive-value checks for every experiment. No panel labels are inferred from raw bit numbers.
 
-Read `docs/SPI_TIMING.md`, `docs/RESPONSE_FIXTURE.md` and `docs/VERIFICATION.md`.
+Read `docs/SPI_MASTER.md`, `docs/INPUT_OBSERVATIONS.md` and `docs/VERIFICATION.md`.
 
 ## Existing web lab
 
@@ -29,7 +29,7 @@ sh scripts/build-inspector.sh
 RUN_AVR_TESTS=1 RUN_CPU_TESTS=1 sh scripts/test.sh
 ```
 
-Requires Python 3.9+, g++, AVR GCC/libc/binutils and simavr 1.6 development files. Without AVR/simavr, `sh scripts/test.sh` runs native tests and explicitly skips CPU/AVR integration tests. v0.8 ran all **74 Python tests with no skips**, plus 72,576 native oracle pulses. Existing v0.5 parity reports remain versioned evidence.
+Requires Python 3.9+, g++, AVR GCC/libc/binutils and simavr 1.6 development files. Without AVR/simavr, `sh scripts/test.sh` runs native tests and explicitly skips CPU/AVR integration tests. v0.9 ran all **95 Python tests with no skips**, plus 72,576 native oracle pulses. Existing v0.5 parity reports remain versioned evidence.
 
 ## Original-firmware experiments
 
@@ -48,6 +48,8 @@ Run the synthetic response experiments with:
 ```sh
 python3 scripts/verify-response-fixture.py
 python3 scripts/verify-response-fixture.py --spi-timing avr-divider-v1
+python3 scripts/verify-spi-behavior.py --suite matrix
+python3 scripts/verify-spi-behavior.py --suite sweep
 ```
 
-Next: qualify SPI status-register semantics and map synthetic key/channel stimuli to observable firmware behavior. Board integration follows verified evidence. Real routing, clock/fuses, EEPROM/calibration, panel mapping and electrical behavior remain open. Included AVR binaries are our simulator probes and must never be flashed onto the module.
+Next: investigate the timing-sensitive channel response and qualify input packing/latency before assigning panel controls. Board integration follows verified evidence. Real routing, clock/fuses, EEPROM/calibration, panel mapping and electrical behavior remain open. Included AVR binaries are our simulator probes and must never be flashed onto the module.

@@ -1,36 +1,45 @@
-Continue Skurkopolis / Metropolis Firmware Lab v0.8.0, 2026-10-22.
+Continue Skurkopolis / Metropolis Firmware Lab v0.9.0, 2026-10-22.
 Repository: https://github.com/joakimskurk/skurkopolis
-Read README.md, docs/VERIFICATION.md, docs/SPI_TIMING.md and docs/RESPONSE_FIXTURE.md.
-Historical product direction remains in ORIGINAL_HANDOFF.md; its implementation status is obsolete.
+Read README.md, docs/VERIFICATION.md, docs/SPI_MASTER.md and docs/INPUT_OBSERVATIONS.md.
+Historical product direction is in ORIGINAL_HANDOFF.md; its implementation status is obsolete.
 
-User has no programmer/measurement equipment now. Continue software work without hardware writes.
-Existing native/custom AVR browser engines use our segment core. Original firmware is CLI only.
-No 1:1 board emulator or successful original-module boot is claimed.
+User has no programmer/measurement equipment now. Continue software, no hardware writes.
+The browser still runs our segment core via native/custom AVR routes. Original firmware
+runs through the bounded CLI inspector. Do not claim working/1:1 original board emulation.
 
-v0.7: optional synthetic STLED key input (PD6 STB/PB5 CLK/PB3 sampled input) and
-PC5/PC4 eight-channel 16-bit SPI responses; strict profiles and timed key events.
-Physical map and registry remain unchanged. All wiring/ADC packing is hypothetical.
+v0.9 adds --spi-status avr-master-v1, an optional master byte/register model independent
+of --spi-timing avr-divider-v1. Default native simavr and v0.8 timing-only behavior are
+preserved. Corrected subset: retained RX, separate TX, status-then-data flag ack, readonly
+SPIF/WCOL, rejected busy writes, IRQ entry/late enable/pending cancellation. Explicit
+synchronous fixture reply API bypasses native SPI_IRQ_INPUT side effects. Unanswered RX
+is synthetic zero. Disabled/slave writes ignored/counted; mode-change abort policy limited.
+No SS/electrical/slave/PRR/CLKPR/real clock-fuse model. See detailed scope, do not overclaim.
 
-v0.8: optional --spi-timing avr-divider-v1, retiming the native simavr1.6 SPI timer
-to eight SCK periods sampled from SPR1:0/SPI2X at SPDR write. Native callback/data/IRQ
-path retained. Default fixed100us untouched. Runtime checks require expected native
-timer/module layout. SPIF clearing and busy writes still have native inaccuracies;
-do not claim full AVR SPI conformance. See explicit counters and limitations.
+95 Python tests no skips, 72,576 native pulses, pure C protocol tests passed. 17 new CPU
+integration tests + 4 analysis tests. Original experiments: matrix32 + sweep66 cases,
+294 controlled runs total; each twice traced and once untraced. Both suites additionally
+verify the unchanged v0.6 20M unwired baseline. All four v0.8 native-divider trace hashes
+preserved. Physical hardware-map and evidence-registry unchanged.
 
-74 Python tests with no skips, 72,576 native pulses, pure C protocol tests passed.
-Four original-image timing scenarios: 23.5M cycles; complete 23M-23.5M trace window,
-repeated twice and matched untraced reports, expected key/channel data, no faults or
-busy/non-master writes. All transfers /4, at most one-cycle callback lateness.
-Display page0 identical at this stop point in all scenarios. v0.7 fixed100us runs
-used 30M stop points and differing display states, so not a same-time causal comparison.
-Unwired v0.6 trace SHA remains 9c474fa8744ea93cae9abc51e5e31b5e8cd2362bf4518c36af26e292d7519ead.
+Matched stops:23.5M and30M, final0.5M trace windows. Key pulses22M..24M. Matrix two timing
+profiles x two status models x four input scenarios. All16 status comparisons have same
+final pages. Timing affects3/8 scenario/stop pairs under either status model. No faults.
 
-Reproduce using scripts/build-inspector.sh, RUN_AVR_TESTS=1 RUN_CPU_TESTS=1 scripts/test.sh,
-and scripts/verify-response-fixture.py --spi-timing avr-divider-v1. Import the official
-hash-pinned updater archive locally first. Never commit original firmware, updater,
-disassembly or private raw traces. firmware-local and evidence/local are ignored.
+Sweep:16 raw key bits +16 channels, master-divider. Every input confirmed at CPU. At30M,
+13 key bits change display pages; bits4,14,15 do not. Do not assign physical button labels.
+Single-channel value512 with all others0 gives no display value change at either stop.
+This is bounded negative evidence, not proof of unused channels. Raw input/output table
+in INPUT_OBSERVATIONS.md. All original runs use polling, zero SPI ISR/collision/abort;
+three unanswered startup transfers and three unread RX overwrites, max1-cycle lateness.
 
-Next: qualify SPI status semantics and controlled-input/observable-behavior correlation.
-Keep synthetic profiles separate from real wiring. Resolve ADC identity, panel labels,
-clock/fuses, EEPROM/calibration and physical behavior only with evidence.
-Docker/CMake/browser/audio gates not run; 131-run parity campaign is retained v0.5 evidence.
+Next: isolate timing-sensitive channel response; qualify synthetic word packing,
+conversion latency/pipeline and input-consumption behavior before wiring a virtual
+original-firmware front panel. Preserve hypothesis/physical-evidence separation.
+
+Reproduce: scripts/build-inspector.sh, RUN_AVR_TESTS=1 RUN_CPU_TESTS=1 scripts/test.sh,
+python3 scripts/verify-spi-behavior.py --suite matrix and --suite sweep. Original firmware
+must be imported locally from the hash-pinned official ZIP. Never commit original HEX,
+updater, disassembly or raw traces. firmware-local and evidence/local are ignored.
+
+Runtime: SIMAVR_PREFIX and LD_LIBRARY_PATH for local simavr1.6 packages, PATH for AVR tools.
+Docker/CMake/browser/audio gates not run; 131-run AVR parity campaign retained as v0.5.

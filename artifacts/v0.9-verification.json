@@ -1,0 +1,28 @@
+{
+  "version": "0.9.0",
+  "date": "2026-10-22",
+  "pythonTests": 95,
+  "pythonSkipped": 0,
+  "nativeOraclePulses": 72576,
+  "originalExperimentCases": 98,
+  "controlledOriginalRuns": 294,
+  "unwiredBaselineChecks": 2,
+  "repeatAndObserverParityPassed": true,
+  "v08ArchivedTracesPreserved": true,
+  "physicalEvidenceUnchanged": {
+    "specs/hardware-map.yaml": "d5b923dab8c52c5999f4e0d75817b1324f3ceae5ece96f269f51a111ca926d79",
+    "specs/evidence-registry.json": "846a2ffb6ff80a8af0763511dd7ca2195cdf82d37b12424a8959557831a6978f"
+  },
+  "boardEmulated": false,
+  "reportSha256": {
+    "artifacts/spi-behavior-matrix.json": "9c0f6ce4fc57254bd79f41cbdfb12f6951460ddeaafb227fa62dc1578fc669cc",
+    "artifacts/spi-behavior-sweep.json": "d76e30036769ac5e460498ae23f3a71614ba92fe7cbb7d9d1c00c058034458b7",
+    "artifacts/v0.9-tests.txt": "17165360b06cb34f472df56f19901c0e52d4d6c267fafb7e18e99c0c3499867e"
+  },
+  "notRun": [
+    "Docker/CMake launch",
+    "Browser/audio acceptance",
+    "Physical board tests"
+  ],
+  "retainedPriorEvidence": "The 131-run native/AVR parity campaign remains v0.5 evidence."
+}

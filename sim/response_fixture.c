@@ -1,6 +1,6 @@
 // Explicit hypothesis fixture, independent of the verified hardware map.
 #include "response_fixture.h"
-#include "spi_timing.h"
+#include "spi_master.h"
 #include "../virtual/response_protocol.h"
 #include <sim_io.h>
 #include <avr_spi.h>
@@ -51,7 +51,7 @@ static uint8_t read_pin(avr_t *avr,avr_io_addr_t address,void *param){
 }
 static void write_hook(avr_t *avr,avr_io_addr_t address,uint8_t value,void *param){
     hook_t *h=param;
-    if(address==0x4e){
+    if(address==0x4e&&(!spi_master_enabled()||spi_master_can_start(avr))){
         bool busy=pending;
         pending=true;pending_tx=value;pending_select=selected;pending_epoch=epoch;
         pending_valid=!busy&&((avr->data[0x4c]&0x50)==0x50)&&
@@ -59,6 +59,7 @@ static void write_hook(avr_t *avr,avr_io_addr_t address,uint8_t value,void *para
         if(!pending_valid)++spi_faults;
     }
     if(h->write)h->write(avr,address,value,h->param);else avr->data[address]=value;
+    if(address==0x4c&&spi_master_enabled()&&!spi_master_busy())pending=false;
     update(avr);
 }
 static void spi_complete(struct avr_irq_t *irq,uint32_t value,void *param){
@@ -70,7 +71,8 @@ static void spi_complete(struct avr_irq_t *irq,uint32_t value,void *param){
     else {
         metro_scan_t *s=&scans[selected==2?0:1];
         if(metro_scan_exchange(s,(uint8_t)value,&rx)){
-            avr_raise_irq(spi_in,rx);++spi_responses;
+            if(spi_master_enabled())spi_master_receive(rx);else avr_raise_irq(spi_in,rx);
+            ++spi_responses;
         } else ++spi_unserved;
     }
     pending=false;
@@ -104,9 +106,9 @@ void response_fixture_tick(avr_t *avr){
         stled.key[0]=e->key[0];stled.key[1]=e->key[1];
     }
 }
-void response_fixture_report(FILE *out){
+void response_fixture_report(FILE *out,const char *timing){
     fprintf(out,",\"responseFixture\":{\"profile\":\"rev010-hypothesis-v1\",\"boardEmulated\":false,\"spiTiming\":\"%s\",\"keyInputAdapter\":\"sampled_PINB3_no_IRQ\",\"stled\":{\"frames\":%llu,\"commands\":%llu,\"keyRequests\":%llu,\"keyComplete\":%llu,\"partialReads\":%llu,\"pinReadOverrides\":%llu,\"writeBytes\":%llu,\"unsupported\":%llu,\"directionFaults\":%llu,\"partialBytes\":%llu,\"displayOn\":%s,\"keyBytes\":[%u,%u],\"pages\":[",
-        spi_timing_name(),(unsigned long long)stled.frames,(unsigned long long)stled.commands,(unsigned long long)stled.key_requests,
+        timing,(unsigned long long)stled.frames,(unsigned long long)stled.commands,(unsigned long long)stled.key_requests,
         (unsigned long long)stled.key_complete,(unsigned long long)stled.partial_reads,(unsigned long long)pin_overrides,
         (unsigned long long)stled.write_bytes,(unsigned long long)stled.unsupported,(unsigned long long)stled.direction_faults,
         (unsigned long long)stled.partial_bytes,stled.display_on?"true":"false",stled.key[0],stled.key[1]);

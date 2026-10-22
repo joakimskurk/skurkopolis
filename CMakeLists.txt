@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.16)
-project(MetropolisLab VERSION 0.8.0 LANGUAGES C CXX)
+project(MetropolisLab VERSION 0.9.0 LANGUAGES C CXX)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_library(metro_core core/sequencer.cpp)

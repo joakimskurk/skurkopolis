@@ -12,6 +12,7 @@
 #include "bus_trace.h"
 #include "response_fixture.h"
 #include "spi_timing.h"
+#include "spi_master.h"
 
 typedef struct { const char *name; unsigned address; uint8_t last; uint64_t changes,first; } reg_t;
 #define REG(n,a) {n,a,0,0,0}
@@ -38,8 +39,13 @@ static uint64_t number(const char *text,uint64_t lo,uint64_t hi){
 }
 static void no_sleep(avr_t *avr,avr_cycle_count_t cycles){(void)avr;(void)cycles;}
 int main(int argc,char **argv){
- int timing=argc>1&&!strcmp(argv[argc-1],"--spi-timing=avr-divider-v1");
- if(timing)--argc;
+ int timing=0,status=0;
+ while(argc>1&&strncmp(argv[argc-1],"--spi-",6)==0){
+  const char *option=argv[--argc];
+  if(!strcmp(option,"--spi-timing=avr-divider-v1")&&!timing)timing=1;
+  else if(!strcmp(option,"--spi-status=avr-master-v1")&&!status)status=1;
+  else fail("unknown or duplicate SPI option");
+ }
  if(argc<4||argc>7)fail("usage: cpu_inspector padded.bin cycles fixture-hz [trace-capacity trace-start-cycle] [fixture.bin]");
  uint64_t limit=number(argv[2],1,100000000),hz=number(argv[3],100000,20000000);
  uint32_t trace_capacity=argc>=6?(uint32_t)number(argv[4],1,100000):0;
@@ -61,7 +67,8 @@ int main(int argc,char **argv){
  avr_ioctl(avr,AVR_IOCTL_EEPROM_SET,&ee);
  avr_eeprom_desc_t check={.ee=NULL,.offset=0,.size=sizeof(eeprom)};avr_ioctl(avr,AVR_IOCTL_EEPROM_GET,&check);
  if(!check.ee||check.size!=1024||memcmp(check.ee,eeprom,1024))fail("EEPROM fixture initialization failed");
- if(timing)spi_timing_init(avr);
+ if(status)spi_master_init(avr,timing);
+ else if(timing)spi_timing_init(avr);
  if(fixture)response_fixture_init(avr,fixture);
  if(trace_capacity)bus_trace_init(avr,trace_capacity,trace_start);
  const unsigned nr=sizeof(regs)/sizeof(regs[0]);
@@ -90,8 +97,9 @@ int main(int argc,char **argv){
  }
  fputs("]",out);
  if(trace_capacity){bus_trace_report(out);bus_trace_close(avr);}
- if(fixture){response_fixture_report(out);response_fixture_close(avr);}
- if(timing){spi_timing_report(out);spi_timing_close(avr);}
+ if(fixture){response_fixture_report(out,timing?"avr-divider-v1":"simavr1.6_fixed100us");response_fixture_close(avr);}
+ if(status){spi_master_report(out);spi_master_close(avr);}
+ else if(timing){spi_timing_report(out);spi_timing_close(avr);}
  fprintf(out,"}\n");fflush(out);avr_terminate(avr);
  return strcmp(reason,"cycle_limit")?2:0;
 }

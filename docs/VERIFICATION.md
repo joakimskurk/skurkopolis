@@ -1,29 +1,32 @@
-# v0.8.0 verification, 2026-10-22
+# v0.9.0 verification, 2026-10-22
 
-## Results
+## Delivered and tested
 
-* Inspector rebuilt with -Wall -Wextra -Werror against the recorded simavr 1.6 toolchain.
-* 74 Python tests passed without skips; 72,576 native oracle pulses, generic peripheral contracts and pure C response-protocol tests passed. See artifacts/v0.8-tests.txt.
-* Six new integration tests cover all eight SPI divider settings at two CPU frequencies, equal bytes, traced/untraced parity, SPIF polling with received bytes, busy-write accounting, disable behavior, latched divider and argument validation.
-* Original 1.37: four scenarios, each twice traced and once untraced, to 23.5M cycles. Complete trace window: 23M through 23.5M, 9,814 to 9,948 events. All reports repeated exactly and matched untraced reports after removing the trace field.
-* Expected synthetic key words and all configured channel words reached the CPU. Zero fixture protocol faults, busy SPI writes or non-master writes. All observed transfers used divide-by-4 (32 cycles per byte); native callback lateness was at most one cycle.
-* The original unwired v0.6 20M startup trace retains SHA-256 9c474fa8744ea93cae9abc51e5e31b5e8cd2362bf4518c36af26e292d7519ead.
-* Verified physical map and evidence registry remain unpopulated and unchanged. Native/custom AVR browser behavior is unchanged; only its version label advances.
+The optional avr-master-v1 register model corrects specific native simavr SPI behaviors while preserving every prior profile. Timing is independently selectable. See SPI_MASTER.md for the exact contract and exclusions.
 
-Compact results: artifacts/spi-timing-verification.json. Raw traces are ignored under firmware-local/timing-analysis. Reproduce with scripts/verify-response-fixture.py --spi-timing avr-divider-v1 after importing the pinned official archive.
+* 95 Python tests passed with no skips; native core 72,576 oracle pulses, generic peripheral contracts, pure C response-protocol tests and physical evidence validation passed. Log: artifacts/v0.9-tests.txt.
+* 17 new CPU tests verify real AVR register reads, write collisions, receive retention, read-only flags, SPIF/WCOL acknowledgement, interrupts, abort/recovery and all divider settings at two frequencies with both timing choices. Each is checked with and without tracing.
+* Four new analysis tests cover frame completeness, partial windows, value/count separation and SPI byte pairing.
+* Matrix: 32 cases, 96 original-firmware runs. Sweep: 66 cases, 198 runs. All 294 controlled runs complete; every case repeats and has matching traced/untraced CPU reports. Both suites separately verify the unchanged v0.6 unwired startup hash.
+* All four archived v0.8 native-divider raw trace hashes remain identical.
+* Expected raw key values and channel words reach the CPU in every case. All eight channels are requested on both candidate banks. No protocol faults or trace overflow occurred.
+* New-model original runs have zero collisions, ignored non-master writes, aborts or SPI ISR entries; three unserved startup bytes and three unread RX overwrites. Callback lateness is at most one CPU cycle.
+* The physical map and evidence registry match the v0.8 git versions byte for byte. No hardware was accessed or written.
 
-## Interpretation
+## Findings
 
-At the v0.8 stop point, display page zero is 39 3f 00 00 08 00 hex in every scenario. Synthetic inputs demonstrably reach the firmware, but no changed display state at this stop point or successful module boot is claimed. Archived v0.7 fixed-100-us experiments at 30M cycles had differing display states; those runs use a different stop point and cannot isolate timing as the sole cause.
+All 16 status-model comparisons give equal final display pages under matched timing and stop points. These polling-based original-image runs do not exercise the edge cases fixed by the register model; the synthetic CPU programs cover those cases.
 
-The original 9M trace window exceeded the event cap. Reducing the observation window to 0.5M preserves complete capture and includes the active key pulse. Window-boundary partial transactions are recorded separately from complete input words; counters from the entire run are not compared as if they covered the window alone.
+Timing changes final display pages for three of eight matched scenario/stop pairs, under either status model. These are channel-ramp at 23.5M and 30M cycles, and combined ramp/key at 23.5M. This isolates an effect of the software timing choice, not physical correctness of either profile.
 
-## Limits
+The single-input sweep confirms all 16 raw key words reach the CPU during their pulse. At 30M cycles, 13 bits produce changed display pages; bits 4, 14 and 15 do not. All 16 single-channel tests deliver their expected values but show no changed final display pages or six-byte display payload sets at the two observation windows. No physical panel labels or musical functions have been assigned.
 
-The optional profile changes byte completion timing only. Native simavr SPIF clearing, WCOL/collision and slave limitations remain. Timer/module-layout dependency is checked at runtime. The default profile and old report format are preserved. See SPI_TIMING.md for model details.
+See INPUT_OBSERVATIONS.md for tables and interpretation. Compact reproducible reports are artifacts/spi-behavior-matrix.json and artifacts/spi-behavior-sweep.json. Aggregate hashes are in artifacts/v0.9-verification.json. Raw traces are ignored under firmware-local/behavior-analysis.
 
-No physical wiring, oscillator/fuses, ADC device/packing, panel/key label, EEPROM/calibration, pitch/gate timing or musical parity is verified. CPU signature remains the simulator's shared 328/P model. No hardware was flashed. Original firmware/updater/disassembly are excluded.
+## Limits and remaining gates
 
-Docker/CMake launch and browser/audio acceptance were not run. The 131-run native/AVR parity campaign remains v0.5 evidence; the current suite includes AVR endpoint integration tests. v0.7 response-fixture results are archived in VERIFICATION_v0.7.md.
+Synthetic 16 MHz / 5 V, all-FF EEPROM, default fuses and shared 328/P simulator signature remain. SPI is a master byte/register subset, not an electrical bus model. SS, slave mode, PRR/CLKPR, pin edges, analog input/output, real ADC identity/packing/pipeline, key labels, board clock/fuses/calibration and musical parity remain unverified. Register acknowledgement races at the silicon level and arbitrary mode changes are outside the qualified subset.
 
-Next: qualify status-register behavior and correlate controlled inputs with firmware display/sequence behavior, keeping hypotheses separate from verified hardware evidence.
+Docker/CMake launch and browser/audio acceptance were not run. Browser code changes only the version label; its engine remains our custom sequencer. The prior 131-run native/AVR parity campaign remains v0.5 evidence. No working or 1:1 original Metropolis emulator is claimed.
+
+Next: isolate the timing-sensitive channel effect and qualify input packing/latency before assigning controls to a virtual original-firmware front panel.

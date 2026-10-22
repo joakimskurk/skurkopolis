@@ -60,7 +60,11 @@ def parse_hex(raw):
                          'paddedFlashSha256': hashlib.sha256(image).hexdigest()}
 
 
-def inspect(path, runner=None, cycles=2000000, hz=16000000, trace_limit=None, trace_start=0, fixture=None, spi_timing=None):
+def inspect(path, runner=None, cycles=2000000, hz=16000000, trace_limit=None, trace_start=0, fixture=None, spi_timing=None, spi_status=None):
+    if spi_status not in (None, "avr-master-v1"):
+        raise ValueError("Unknown SPI status profile")
+    if spi_status and runner is None:
+        raise ValueError("SPI status requires a CPU runner")
     if spi_timing not in (None, "avr-divider-v1"):
         raise ValueError("Unknown SPI timing profile")
     if spi_timing and runner is None:
@@ -120,6 +124,8 @@ def inspect(path, runner=None, cycles=2000000, hz=16000000, trace_limit=None, tr
                 command.append(str(fixture_file))
             if spi_timing:
                 command.append("--spi-timing=" + spi_timing)
+            if spi_status:
+                command.append("--spi-status=" + spi_status)
             proc = subprocess.run(command,
                                   capture_output=True, text=True, timeout=30)
         if proc.returncode not in (0, 2):
@@ -139,6 +145,13 @@ def inspect(path, runner=None, cycles=2000000, hz=16000000, trace_limit=None, tr
             'Native SPIF clearing, collision and slave behavior remain incomplete; no SPI edges, SS or clock/fuse model.',
             'Divider is sampled at SPDR write; completion may be late by an instruction boundary.'
         ]
+    if spi_status:
+        result['limitations'] = [x for x in result['limitations'] if not x.startswith('Native SPIF') and not x.startswith('SPI avr-divider-v1 retimes')]
+        result['limitations'] += [
+            'avr-master-v1 models master byte registers, SPIF/WCOL acknowledgement and interrupts; no electrical edges or slave/SS behavior.',
+            'Unanswered SPI input is synthetic zero; byte responses use the explicit fixture completion API.',
+            'Fixed-100us or divider timing is selected independently; clock/fuses and mid-byte control changes remain unqualified.'
+        ]
     return result
 
 
@@ -152,9 +165,10 @@ def main():
     parser.add_argument('--trace-start', type=int, default=0, help='First eligible cycle')
     parser.add_argument('--fixture', type=Path, help='Explicit synthetic response profile JSON')
     parser.add_argument("--spi-timing", choices=["avr-divider-v1"], help="Opt-in byte completion timing; default preserves simavr 1.6")
+    parser.add_argument("--spi-status", choices=["avr-master-v1"], help="Opt-in master register model")
     args = parser.parse_args()
     try:
-        result = inspect(args.hex, args.runner, args.cycles, args.hz, args.trace_limit, args.trace_start, args.fixture, args.spi_timing)
+        result = inspect(args.hex, args.runner, args.cycles, args.hz, args.trace_limit, args.trace_start, args.fixture, args.spi_timing, args.spi_status)
         print(json.dumps(result, indent=2))
         return 0 if result.get('runCompletedToLimit', True) else 2
     except (OSError, ValueError, RuntimeError, subprocess.SubprocessError) as exc:

@@ -1,0 +1,28 @@
+{
+  "date": "2026-10-22",
+  "sources": [
+    {
+      "url": "https://ww1.microchip.com/downloads/en/devicedoc/atmel-7810-automotive-microcontrollers-atmega328p_datasheet.pdf",
+      "document": "7810D-AVR-01/15",
+      "sections": [
+        "18.2",
+        "18.5.1",
+        "18.5.2",
+        "18.5.3"
+      ],
+      "role": "Master byte transfer, receive buffering, SPIF/WCOL acknowledgement, status register access and divider table"
+    },
+    {
+      "url": "https://developerhelp.microchip.com/xwiki/bin/view/products/mcu-mpu/8-bit-avr/structure/spi-interface/",
+      "role": "Microchip master transfer and retained receive byte overview"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/buserror/simavr/v1.6/simavr/sim/sim_interrupts.c",
+      "sha256": "6083b0c4da900d3569df56f33bef35883810d9c9f94c78338e360e189f52fc54",
+      "role": "Native interrupt scheduling, flag clearing, vector-entry notification and ISR dispatch"
+    }
+  ],
+  "simavrSpiSourceProvenance": "artifacts/bus-analysis-sources.json",
+  "documentsRedistributed": false,
+  "scope": "The source supports the register-model subset, not verified physical ATmega328 board behavior."
+}

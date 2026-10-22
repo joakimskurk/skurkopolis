@@ -1,0 +1,5317 @@
+{
+  "archivedV08TracesPreserved": true,
+  "boardEmulated": false,
+  "configurations": {
+    "channel-ramp": {
+      "keyBytes": [
+        0,
+        0
+      ],
+      "keyEvents": [],
+      "profile": "rev010-hypothesis-v1",
+      "schema": 1,
+      "spiWords": {
+        "PC4": [
+          64,
+          192,
+          320,
+          448,
+          576,
+          704,
+          832,
+          960
+        ],
+        "PC5": [
+          0,
+          128,
+          256,
+          384,
+          512,
+          640,
+          768,
+          896
+        ]
+      }
+    },
+    "channel-ramp-key-pulse": {
+      "keyBytes": [
+        0,
+        0
+      ],
+      "keyEvents": [
+        {
+          "bytes": [
+            1,
+            0
+          ],
+          "cycle": 22000000
+        },
+        {
+          "bytes": [
+            0,
+            0
+          ],
+          "cycle": 24000000
+        }
+      ],
+      "profile": "rev010-hypothesis-v1",
+      "schema": 1,
+      "spiWords": {
+        "PC4": [
+          64,
+          192,
+          320,
+          448,
+          576,
+          704,
+          832,
+          960
+        ],
+        "PC5": [
+          0,
+          128,
+          256,
+          384,
+          512,
+          640,
+          768,
+          896
+        ]
+      }
+    },
+    "key-pulse": {
+      "keyBytes": [
+        0,
+        0
+      ],
+      "keyEvents": [
+        {
+          "bytes": [
+            1,
+            0
+          ],
+          "cycle": 22000000
+        },
+        {
+          "bytes": [
+            0,
+            0
+          ],
+          "cycle": 24000000
+        }
+      ],
+      "profile": "rev010-hypothesis-v1",
+      "schema": 1,
+      "spiWords": {
+        "PC4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "PC5": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    "neutral": {
+      "keyBytes": [
+        0,
+        0
+      ],
+      "keyEvents": [],
+      "profile": "rev010-hypothesis-v1",
+      "schema": 1,
+      "spiWords": {
+        "PC4": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "PC5": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    }
+  },
+  "date": "2026-10-22",
+  "experiments": [
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          115,
+          115,
+          115,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3617,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1026,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 115,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 86
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "9415ea8ed4de4caeb94dc0e01950633ecb59a20378f5675293846e4761630a60",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 2077,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          31,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3590,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 19548,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 256,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 10
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 88
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "4aba8f86a80cf2dc36f20b0fc313d3f59e08c6ddf9fd6a83dd641db55c27f8f8"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "39eda71e6423794919578fe796b1072ff1268971d101aea02bed3b68bdb8d365",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 4606,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55
+        ],
+        "PC5": [
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9825,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 18110,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 439,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 42
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 328
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "4f2de541fc191541887dfa77eb36f88564bd515224b193bed620b131002bff3b",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 7902,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          120,
+          121,
+          121,
+          121,
+          121,
+          121,
+          121,
+          120
+        ],
+        "PC5": [
+          967,
+          967,
+          967,
+          967,
+          967,
+          967,
+          967,
+          967
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9635,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 9456,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 967,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 40
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 40
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 320
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "4aba8f86a80cf2dc36f20b0fc313d3f59e08c6ddf9fd6a83dd641db55c27f8f8"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "790f1b06a082f225e919bffbb584d0be60e2797cb072d006ab092f62d5d08738",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 17404,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          115,
+          115,
+          115,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3617,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1026,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 115,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 86
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "5870dfb2fbf35d88e03476daeef3708e137cbd013dc3733de3e2ea9c3fa1ec70",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 2080,
+        "configurationCounts": [
+          2081,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 2078,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 2080,
+        "starts": 2081,
+        "statusReads": 834157,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 2081
+      },
+      "spiResponsesWholeRun": 2077,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          31,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256,
+          256
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3590,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 19548,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 256,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 10
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 88
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "4aba8f86a80cf2dc36f20b0fc313d3f59e08c6ddf9fd6a83dd641db55c27f8f8"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "a8e2ef1a98ad4bbd0f0a2b56c4f66e4b5808e61716f7e6c629e5b924db5e8252",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 4609,
+        "configurationCounts": [
+          4609,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 4607,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 4609,
+        "starts": 4609,
+        "statusReads": 1848187,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 4609
+      },
+      "spiResponsesWholeRun": 4606,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55
+        ],
+        "PC5": [
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9825,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 18110,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 439,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 42
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 328
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "136c4e2cd1ae578d055af7617bc11efa4e04cbe9082a51de646c625b0746d26d",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 7905,
+        "configurationCounts": [
+          7905,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 7903,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 7905,
+        "starts": 7905,
+        "statusReads": 71146,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 7905
+      },
+      "spiResponsesWholeRun": 7902,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          120,
+          121,
+          121,
+          121,
+          121,
+          121,
+          121,
+          120
+        ],
+        "PC5": [
+          967,
+          967,
+          967,
+          967,
+          967,
+          967,
+          967,
+          967
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9635,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 9456,
+      "fixtureSha256": "97e7974eade2cee73b9a971600e007320e7470a5463a263513ab83707a2d9fb3",
+      "keyReadsWholeRun": 967,
+      "name": "neutral",
+      "observations": {
+        "completeKeyWords": {
+          "0": 40
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 40
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 320
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "4aba8f86a80cf2dc36f20b0fc313d3f59e08c6ddf9fd6a83dd641db55c27f8f8"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "f06f87a519fff2e7782f25ae0804c422aa0eb91265fe0344444f318c3d835df0",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 17407,
+        "configurationCounts": [
+          17407,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 17405,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 17407,
+        "starts": 17407,
+        "statusReads": 156664,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 17407
+      },
+      "spiResponsesWholeRun": 17404,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          116,
+          116,
+          116,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3624,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          8,
+          7,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1014,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 115,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 2,
+              "448": 2,
+              "576": 1,
+              "64": 1,
+              "704": 1,
+              "832": 1,
+              "960": 1
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 11,
+              "384": 11,
+              "512": 11,
+              "640": 11,
+              "768": 11,
+              "896": 10
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "d21d0aef2004f5cd603fa01e7f2d0c97a03739102d14ae2949db0ae8847d9f16"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "61f7eca7123b32a045a65a0397303806035fb3a29789ed7817c20b49e0029437",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 2082,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          32,
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          257,
+          258,
+          257,
+          257,
+          257,
+          257,
+          257,
+          257
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3617,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          8,
+          7,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1028,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 257,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 1,
+              "448": 1,
+              "576": 1,
+              "64": 2,
+              "704": 1,
+              "832": 1,
+              "960": 2
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 10,
+              "384": 10,
+              "512": 11,
+              "640": 11,
+              "768": 11,
+              "896": 11
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "d21d0aef2004f5cd603fa01e7f2d0c97a03739102d14ae2949db0ae8847d9f16"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "e44fb953d9829c2b3d01b7ac3c4ebcdfa0ec230eae12d2da1c1193baf3c13b63",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 4629,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55
+        ],
+        "PC5": [
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9886,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 9508,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 440,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 6
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 41,
+              "640": 41,
+              "768": 41,
+              "896": 41
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 1,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "4cf0c5bb91d2177e3ed4542d997642a11a9d36dc5a81f35e378cafcd84bdc459",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 7918,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          121,
+          122,
+          122,
+          121,
+          121,
+          121,
+          121,
+          121
+        ],
+        "PC5": [
+          971,
+          971,
+          971,
+          971,
+          971,
+          971,
+          971,
+          971
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9773,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 19590,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 971,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 5
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 41,
+              "640": 41,
+              "768": 41,
+              "896": 41
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "4aba8f86a80cf2dc36f20b0fc313d3f59e08c6ddf9fd6a83dd641db55c27f8f8"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "9dc8fc9102bab49eba050de42ecc9afd6a4cf6300625f09d51501e6448321e41",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 17476,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          116,
+          116,
+          116,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3624,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          8,
+          7,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1014,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 115,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 2,
+              "448": 2,
+              "576": 1,
+              "64": 1,
+              "704": 1,
+              "832": 1,
+              "960": 1
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 11,
+              "384": 11,
+              "512": 11,
+              "640": 11,
+              "768": 11,
+              "896": 10
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "d21d0aef2004f5cd603fa01e7f2d0c97a03739102d14ae2949db0ae8847d9f16"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "b7050d8e4ae0a9bb85af4d63a5a9152218834a14dcf0fc6f0dcb5a32642adde3",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 2085,
+        "configurationCounts": [
+          2086,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 2083,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 2085,
+        "starts": 2086,
+        "statusReads": 836455,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 2086
+      },
+      "spiResponsesWholeRun": 2082,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          32,
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          257,
+          258,
+          257,
+          257,
+          257,
+          257,
+          257,
+          257
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3617,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          8,
+          7,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1028,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 257,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 1,
+              "448": 1,
+              "576": 1,
+              "64": 2,
+              "704": 1,
+              "832": 1,
+              "960": 2
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 10,
+              "384": 10,
+              "512": 11,
+              "640": 11,
+              "768": 11,
+              "896": 11
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "d21d0aef2004f5cd603fa01e7f2d0c97a03739102d14ae2949db0ae8847d9f16"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "5d4f20553f43a28331bf92f1e04a02b08e281dc68398f39d7bda5ab3383d1f65",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 4632,
+        "configurationCounts": [
+          4633,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 4630,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 1,
+        "spifAccessClears": 4632,
+        "starts": 4633,
+        "statusReads": 1857487,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 4633
+      },
+      "spiResponsesWholeRun": 4629,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55
+        ],
+        "PC5": [
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9886,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 9508,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 440,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 6
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 41,
+              "640": 41,
+              "768": 41,
+              "896": 41
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 1,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "15b85e0df904d4a895e14a1e124e440c34880c5707a9bc779cdcad94ed76fe5e",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 7921,
+        "configurationCounts": [
+          7921,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 7919,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 7921,
+        "starts": 7921,
+        "statusReads": 71290,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 7921
+      },
+      "spiResponsesWholeRun": 7918,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          121,
+          122,
+          122,
+          121,
+          121,
+          121,
+          121,
+          121
+        ],
+        "PC5": [
+          971,
+          971,
+          971,
+          971,
+          971,
+          971,
+          971,
+          971
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9773,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          32,
+          0,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 19590,
+      "fixtureSha256": "92b6ec2b6819ee9d7ae9831d7ba27ee12796bc9a612ff4313346043736adf967",
+      "keyReadsWholeRun": 971,
+      "name": "channel-ramp",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 5
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 41,
+              "640": 41,
+              "768": 41,
+              "896": 41
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              32,
+              0,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "4aba8f86a80cf2dc36f20b0fc313d3f59e08c6ddf9fd6a83dd641db55c27f8f8"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "40627458de985d9d6b6364639540554cf8375cc6f46ea3d20cbcdaa26a3650b0",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 17479,
+        "configurationCounts": [
+          17479,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 17477,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 17479,
+        "starts": 17479,
+        "statusReads": 157312,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 17479
+      },
+      "spiResponsesWholeRun": 17476,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          115,
+          115,
+          115,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3614,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1016,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 115,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 86
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "9326b115dd712db1fa886f09d70fdecd30800bca14a8fccf085c679f13670ace",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 2076,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          256,
+          257,
+          257,
+          257,
+          257,
+          257,
+          257,
+          256
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3621,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1018,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 256,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11
+            }
+          },
+          "PC5": {
+            "partialAtStart": true,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 86
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "70e3cdccf8b1c780901452faa3709d61b0c0206051ad7c0e5df244fd3a9750f6",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 4620,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          54
+        ],
+        "PC5": [
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9814,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 9470,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 439,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 328
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "0c0fde8a5f073bc6da85d6e65e1998aa829f8844a238df73dc53b2304ff9ef08",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 7900,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          121,
+          122,
+          121,
+          121,
+          121,
+          121,
+          121,
+          121
+        ],
+        "PC5": [
+          969,
+          970,
+          970,
+          970,
+          970,
+          969,
+          969,
+          969
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9668,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1028,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 969,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 40
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 324
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "58eec5453f10448540731a979fdde09bde784ba252eb2362a6e610c425e6fdcf",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 17451,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          115,
+          115,
+          115,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3614,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1016,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 115,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 86
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "c8fc87eef1c05f90c810cae9b202c5b594399d6a4ac5d6265e631c09ffd2bc39",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 2079,
+        "configurationCounts": [
+          2080,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 2077,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 2079,
+        "starts": 2080,
+        "statusReads": 833967,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 2080
+      },
+      "spiResponsesWholeRun": 2076,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          256,
+          257,
+          257,
+          257,
+          257,
+          257,
+          257,
+          256
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3621,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1018,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 256,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11
+            }
+          },
+          "PC5": {
+            "partialAtStart": true,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 86
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "dd02fab1c896fa425cd902d06e5ab3ddfd93594eab8fa204177e5200cc63b10d",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 4623,
+        "configurationCounts": [
+          4624,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 4621,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 4623,
+        "starts": 4624,
+        "statusReads": 1854114,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 4624
+      },
+      "spiResponsesWholeRun": 4620,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          54
+        ],
+        "PC5": [
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439,
+          439
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9814,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 9470,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 439,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 328
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "394cf98437b816b0e6443bbc89933b9bfa5de060df486139ec79694222d6e7ea",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 7903,
+        "configurationCounts": [
+          7903,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 7901,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 7903,
+        "starts": 7903,
+        "statusReads": 71128,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 7903
+      },
+      "spiResponsesWholeRun": 7900,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          121,
+          122,
+          121,
+          121,
+          121,
+          121,
+          121,
+          121
+        ],
+        "PC5": [
+          969,
+          970,
+          970,
+          970,
+          970,
+          969,
+          969,
+          969
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9668,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1028,
+      "fixtureSha256": "8ba91e9a5f20a04d3a24bf7f9b6f8beeba0d74824f3f4ae9985d3295386c822a",
+      "keyReadsWholeRun": 969,
+      "name": "key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 40
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 324
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "5f77ed6797623e0b3d6ed85589f3adb43979c3d33c9af20b3438b83ae9e3eadc",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 17454,
+        "configurationCounts": [
+          17455,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 17452,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 17454,
+        "starts": 17455,
+        "statusReads": 157094,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 17455
+      },
+      "spiResponsesWholeRun": 17451,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          116,
+          116,
+          116,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3624,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          8,
+          7,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1018,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 115,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 2,
+              "448": 2,
+              "576": 1,
+              "64": 1,
+              "704": 1,
+              "832": 1,
+              "960": 1
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 11,
+              "384": 11,
+              "512": 11,
+              "640": 11,
+              "768": 11,
+              "896": 10
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "d21d0aef2004f5cd603fa01e7f2d0c97a03739102d14ae2949db0ae8847d9f16"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "8a45a82de6fe5540686405c1092115070f0d71ed622db0cbbd1453d031ff99b9",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 2082,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          32,
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          257,
+          258,
+          258,
+          258,
+          258,
+          257,
+          257,
+          257
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3624,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1024,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 257,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 1,
+              "448": 1,
+              "576": 1,
+              "64": 2,
+              "704": 1,
+              "832": 1,
+              "960": 2
+            }
+          },
+          "PC5": {
+            "partialAtStart": true,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 11,
+              "384": 11,
+              "512": 11,
+              "640": 10,
+              "768": 10,
+              "896": 11
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "native-fixed",
+      "rawTraceSha256": "e90117de2cc8c3277064d0647c5464a56c7505efa2cd04a996bedb3f085f31f1",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 4635,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55
+        ],
+        "PC5": [
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9948,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 15508,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 440,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 42
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 6
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 42,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 42,
+              "640": 42,
+              "768": 42,
+              "896": 42
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "071e0a45d9ee069d3e5b9ec6768fac7961097b029efcda8381be8f3bd6594cf7",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 7918,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          121,
+          122,
+          122,
+          122,
+          122,
+          121,
+          121,
+          121
+        ],
+        "PC5": [
+          973,
+          973,
+          973,
+          973,
+          973,
+          973,
+          973,
+          973
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9803,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 20456,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 973,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 5
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 41,
+              "640": 41,
+              "768": 41,
+              "896": 41
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "native-divider",
+      "rawTraceSha256": "353ce11a66db1c59026e02443eec52d64a6fffccdad9f95c9ac0d6a8f7771932",
+      "repeatIdentical": true,
+      "spiMaster": null,
+      "spiResponsesWholeRun": 17512,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          14,
+          15,
+          15,
+          15,
+          14,
+          14,
+          14,
+          14
+        ],
+        "PC5": [
+          115,
+          116,
+          116,
+          116,
+          116,
+          116,
+          116,
+          115
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 3624,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          8,
+          7,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1018,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 115,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 2,
+              "448": 2,
+              "576": 1,
+              "64": 1,
+              "704": 1,
+              "832": 1,
+              "960": 1
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 11,
+              "384": 11,
+              "512": 11,
+              "640": 11,
+              "768": 11,
+              "896": 10
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              8,
+              7,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "d21d0aef2004f5cd603fa01e7f2d0c97a03739102d14ae2949db0ae8847d9f16"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "30a044baa92d85d1658b3fb8c85511e6358043c53d559641e6ef3b0fdf307be3",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 2085,
+        "configurationCounts": [
+          2086,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 2083,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 2085,
+        "starts": 2086,
+        "statusReads": 836265,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 2086
+      },
+      "spiResponsesWholeRun": 2082,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          32,
+          33,
+          32,
+          32,
+          32,
+          32,
+          32,
+          32
+        ],
+        "PC5": [
+          257,
+          258,
+          258,
+          258,
+          258,
+          257,
+          257,
+          257
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 3624,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 1024,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 257,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 11
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 2,
+              "320": 1,
+              "448": 1,
+              "576": 1,
+              "64": 2,
+              "704": 1,
+              "832": 1,
+              "960": 2
+            }
+          },
+          "PC5": {
+            "partialAtStart": true,
+            "partialAtStop": true,
+            "wordCounts": {
+              "0": 11,
+              "128": 11,
+              "256": 11,
+              "384": 11,
+              "512": 11,
+              "640": 10,
+              "768": 10,
+              "896": 11
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "master-fixed",
+      "rawTraceSha256": "de3417b8aebe80279889354718418a49658739834da8e139e09ca5dcf367fab7",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 4638,
+        "configurationCounts": [
+          4639,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 4636,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": true,
+        "profile": "avr-master-v1",
+        "receiveByte": 2,
+        "spifAccessClears": 4638,
+        "starts": 4639,
+        "statusReads": 1859987,
+        "timing": "simavr1.6_fixed100us",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 4639
+      },
+      "spiResponsesWholeRun": 4635,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          54,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55,
+          55
+        ],
+        "PC5": [
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440,
+          440
+        ]
+      },
+      "cycleLimit": 23500000,
+      "displayOn": true,
+      "events": 9948,
+      "finalPages": [
+        [
+          57,
+          63,
+          0,
+          0,
+          8,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 15508,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 440,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "1": 42
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 6
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 42,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 42,
+              "640": 42,
+              "768": 42,
+              "896": 42
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              57,
+              63,
+              0,
+              0,
+              8,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "79eb552674f014133ea6a83d3d741726c43bd01c198b542248f9b3a2d1746a9b"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "13f15acf205fe90dc2ccb56d695f13447c4d7b8eb80a23db1182bd51dc216eee",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 7921,
+        "configurationCounts": [
+          7921,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 7919,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 7921,
+        "starts": 7921,
+        "statusReads": 71290,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 7921
+      },
+      "spiResponsesWholeRun": 7918,
+      "traceStart": 23000000,
+      "untracedReportIdentical": true
+    },
+    {
+      "channelReadsWholeRun": {
+        "PC4": [
+          121,
+          122,
+          122,
+          122,
+          122,
+          121,
+          121,
+          121
+        ],
+        "PC5": [
+          973,
+          973,
+          973,
+          973,
+          973,
+          973,
+          973,
+          973
+        ]
+      },
+      "cycleLimit": 30000000,
+      "displayOn": true,
+      "events": 9803,
+      "finalPages": [
+        [
+          124,
+          115,
+          6,
+          91,
+          63,
+          0
+        ],
+        [
+          0
+        ],
+        [
+          125,
+          119,
+          119,
+          119
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "finalPc": 20456,
+      "fixtureSha256": "f4898920d5f9b53748c74a5a4c3a0187197bc06dfb078c4eeeac707b8082e524",
+      "keyReadsWholeRun": 973,
+      "name": "channel-ramp-key-pulse",
+      "observations": {
+        "completeKeyWords": {
+          "0": 41
+        },
+        "completeWriteFrames": 12,
+        "cpuSpiReads": {
+          "PC4": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "192": 5,
+              "320": 5,
+              "448": 5,
+              "576": 5,
+              "64": 5,
+              "704": 5,
+              "832": 5,
+              "960": 5
+            }
+          },
+          "PC5": {
+            "partialAtStart": false,
+            "partialAtStop": false,
+            "wordCounts": {
+              "0": 41,
+              "128": 41,
+              "256": 41,
+              "384": 41,
+              "512": 41,
+              "640": 41,
+              "768": 41,
+              "896": 41
+            }
+          }
+        },
+        "displayPayloads": [
+          {
+            "bytes": [
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "partialGpioFrames": 0,
+        "writePatterns": [
+          {
+            "bytes": [
+              0,
+              124,
+              115,
+              6,
+              91,
+              63,
+              0
+            ],
+            "count": 6
+          },
+          {
+            "bytes": [
+              40,
+              0
+            ],
+            "count": 6
+          }
+        ],
+        "writeSequenceSha256": "96f963fa6176c3e1b957d6710534e8a30c2f5d016bf489c71f5a78901cfb4ae8"
+      },
+      "profile": "master-divider",
+      "rawTraceSha256": "26cf973d4a0b6f373c2c9c901a111c2a125f7befe09ca91f3420ecc48cbbe377",
+      "repeatIdentical": true,
+      "spiMaster": {
+        "abortedTransfers": 0,
+        "collisions": 0,
+        "completions": 17515,
+        "configurationCounts": [
+          17515,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "dataReads": 17513,
+        "ignoredNonMasterWrites": 0,
+        "isrEntries": 0,
+        "maxCallbackLatenessCycles": 1,
+        "pendingAtStop": false,
+        "profile": "avr-master-v1",
+        "receiveByte": 0,
+        "spifAccessClears": 17515,
+        "starts": 17515,
+        "statusReads": 157636,
+        "timing": "avr-divider-v1",
+        "unansweredTransfers": 3,
+        "unreadOverwrites": 3,
+        "writes": 17515
+      },
+      "spiResponsesWholeRun": 17512,
+      "traceStart": 29500000,
+      "untracedReportIdentical": true
+    }
+  ],
+  "inputSha256": "996cac09c44112cccf7d89a50cdb600722586c1cd807536730134794dd9569c9",
+  "limits": [
+    "Raw key bits and synthetic 16-bit channel words have no verified panel labels.",
+    "Identical time bounds isolate software profile effects, not physical accuracy.",
+    "Different write-sequence hashes can reflect scan rate/count rather than different values.",
+    "No analog CV, gate, successful board boot or musical parity is established."
+  ],
+  "physicalMapChanged": false,
+  "profileComparisons": [
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "neutral",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        2077,
+        7902
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "master-fixed",
+      "name": "neutral",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        2077,
+        7902
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "neutral",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        2077,
+        2077
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "neutral",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        7902,
+        7902
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "neutral",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        4606,
+        17404
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "master-fixed",
+      "name": "neutral",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        4606,
+        17404
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "neutral",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        4606,
+        4606
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "neutral",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        17404,
+        17404
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": false,
+      "left": "native-fixed",
+      "name": "channel-ramp",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        2082,
+        7918
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": false,
+      "left": "master-fixed",
+      "name": "channel-ramp",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        2082,
+        7918
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "channel-ramp",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        2082,
+        2082
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "channel-ramp",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        7918,
+        7918
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": false,
+      "left": "native-fixed",
+      "name": "channel-ramp",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        4629,
+        17476
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": false,
+      "left": "master-fixed",
+      "name": "channel-ramp",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        4629,
+        17476
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "channel-ramp",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        4629,
+        4629
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "channel-ramp",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        17476,
+        17476
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "key-pulse",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        2076,
+        7900
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "master-fixed",
+      "name": "key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        2076,
+        7900
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "key-pulse",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        2076,
+        2076
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        7900,
+        7900
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "key-pulse",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        4620,
+        17451
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "master-fixed",
+      "name": "key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        4620,
+        17451
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "key-pulse",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        4620,
+        4620
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        17451,
+        17451
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": false,
+      "left": "native-fixed",
+      "name": "channel-ramp-key-pulse",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        2082,
+        7918
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": false,
+      "left": "master-fixed",
+      "name": "channel-ramp-key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        2082,
+        7918
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "channel-ramp-key-pulse",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        2082,
+        2082
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 23500000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "channel-ramp-key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        7918,
+        7918
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "channel-ramp-key-pulse",
+      "right": "native-divider",
+      "wholeRunResponseCounts": [
+        4635,
+        17512
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "master-fixed",
+      "name": "channel-ramp-key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        4635,
+        17512
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-fixed",
+      "name": "channel-ramp-key-pulse",
+      "right": "master-fixed",
+      "wholeRunResponseCounts": [
+        4635,
+        4635
+      ]
+    },
+    {
+      "cpuSpiWordSetsEqual": true,
+      "cycleLimit": 30000000,
+      "finalPagesEqual": true,
+      "left": "native-divider",
+      "name": "channel-ramp-key-pulse",
+      "right": "master-divider",
+      "wholeRunResponseCounts": [
+        17512,
+        17512
+      ]
+    }
+  ],
+  "profiles": {
+    "master-divider": {
+      "spi_status": "avr-master-v1",
+      "spi_timing": "avr-divider-v1"
+    },
+    "master-fixed": {
+      "spi_status": "avr-master-v1",
+      "spi_timing": null
+    },
+    "native-divider": {
+      "spi_status": null,
+      "spi_timing": "avr-divider-v1"
+    },
+    "native-fixed": {
+      "spi_status": null,
+      "spi_timing": null
+    }
+  },
+  "relativeToNeutral": [
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp",
+      "profile": "native-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp",
+      "profile": "native-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "channel-ramp",
+      "profile": "native-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "channel-ramp",
+      "profile": "native-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp",
+      "profile": "master-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp",
+      "profile": "master-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "channel-ramp",
+      "profile": "master-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "channel-ramp",
+      "profile": "master-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "key-pulse",
+      "profile": "native-fixed",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "key-pulse",
+      "profile": "native-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "key-pulse",
+      "profile": "native-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "key-pulse",
+      "profile": "native-divider",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "key-pulse",
+      "profile": "master-fixed",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "key-pulse",
+      "profile": "master-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "key-pulse",
+      "profile": "master-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "key-pulse",
+      "profile": "master-divider",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp-key-pulse",
+      "profile": "native-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp-key-pulse",
+      "profile": "native-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "channel-ramp-key-pulse",
+      "profile": "native-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp-key-pulse",
+      "profile": "native-divider",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp-key-pulse",
+      "profile": "master-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp-key-pulse",
+      "profile": "master-fixed",
+      "writeSequenceChanged": true
+    },
+    {
+      "cycleLimit": 23500000,
+      "displayPayloadSetChanged": false,
+      "finalPagesChanged": false,
+      "name": "channel-ramp-key-pulse",
+      "profile": "master-divider",
+      "writeSequenceChanged": false
+    },
+    {
+      "cycleLimit": 30000000,
+      "displayPayloadSetChanged": true,
+      "finalPagesChanged": true,
+      "name": "channel-ramp-key-pulse",
+      "profile": "master-divider",
+      "writeSequenceChanged": true
+    }
+  ],
+  "schema": 1,
+  "suite": "matrix",
+  "unwiredTraceSha256": "9c474fa8744ea93cae9abc51e5e31b5e8cd2362bf4518c36af26e292d7519ead",
+  "version": "0.9.0"
+}

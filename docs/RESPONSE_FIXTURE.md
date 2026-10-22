@@ -173,3 +173,7 @@ fuses/calibration and musical A/B validation remain open.
 ## v0.8 timing option
 
 The v0.7 results above use native fixed 100 us timing. v0.8 adds an independent opt-in `avr-divider-v1` profile; see SPI_TIMING.md. Default behavior and the archived v0.7 verification report remain unchanged.
+
+## v0.9 master-register option
+
+With `--spi-status avr-master-v1`, the fixture responds through the explicit master completion API and preserves pending transaction state across rejected busy writes. Other profiles continue using the original native SPI input notification. See SPI_MASTER.md.

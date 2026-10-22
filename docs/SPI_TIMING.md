@@ -51,3 +51,7 @@ A 9M-cycle trace window exceeded the bounded 100,000-event buffer; the final win
 The unchanged v0.6 unwired startup trace is hash-checked on every verification run. Display-memory changes under stimuli do not establish successful module boot, panel mapping, pitch/gate timing or musical parity.
 
 At the 23.5M-cycle stop point, all four scenarios have identical display page zero (39 3f 00 00 08 00 hex). The v0.7 runs stopped at 30M and are not a controlled same-time timing comparison.
+
+## v0.9 independent register option
+
+The v0.8 adapter above is preserved. Add `--spi-status avr-master-v1` to select the new master register implementation instead; the timing choice remains independent. See SPI_MASTER.md and INPUT_OBSERVATIONS.md for matched-time comparisons.
